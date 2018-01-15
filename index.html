@@ -65,7 +65,9 @@
 							<p class="details" v-html="project.description"></p>
 						</div>
 					</div>
-					<iframe width="450" height="900" src="assets\media\MANGANIME PROTOTYPE\index.html" frameborder="0" allowfullscreen></iframe>
+					<div class="embed-responsive embed-responsive-16by9">
+  					<iframe class="embed-responsive-item" width="450" height="900" src="assets\media\MANGANIME PROTOTYPE\index.html" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="work-close col s12 m2 l2">
@@ -79,14 +81,19 @@
 			<div class="text-container col s12 m10 l10">
 				<h1>
 						Hi, I'm Axel Gueudin.
-						</h1>
+				</h1>
 				<p class="col s12 m4 l4">
 					I'm originally from Rouen, France and now studying in Valenciennes, France. Email me if you have an interesting project or if you just want to say hello.
 				</p>
-				<blockquote>
+				<blockquote class="col s12 s4 l4">
 					DO WHAT YOU CAN'T
 				</blockquote>
-				<iframe id="player" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+				<div id="video" class="col s12 s4 l4">
+					<video type="video/mp4">
+						<source src="assets/media/do what you can't.mp4" type="video/mp4">
+					</video>
+				<p>© Casey Neistat</p>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -99,47 +106,6 @@
 	<script src="js/brutalist.js"></script>
 	<script src="js/start.brutalizing.js"></script>
 	<script>
-				// 2. This code loads the IFrame Player API code asynchronously.
-	      var tag = document.createElement('script');
-
-	      tag.src = "https://www.youtube.com/iframe_api";
-	      var firstScriptTag = document.getElementsByTagName('script')[0];
-	      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	      // 3. This function creates an <iframe> (and YouTube player)
-	      //    after the API code downloads.
-				var player;
-				function onYouTubeIframeAPIReady() {
-				player = new YT.Player('player', {
-				height: '560',
-				width: '315',
-				videoId: 'jG7dSXcfVqE',
-				events: {
-					'onReady': onPlayerReady,
-					'onStateChange': onPlayerStateChange
-				}
-				});
-				}
-				// 4. The API will call this function when the video player is ready.
-				function onPlayerReady(event) {
-					event.target.playVideo();
-				}
-
-				// 5. The API calls this function when the player's state changes.
-				//    The function indicates that when playing a video (state=1),
-				//    the player should play for six seconds and then stop.
-				var done = false;
-				function onPlayerStateChange(event) {
-					if (event.data == YT.PlayerState.PLAYING && !done) {
-						setTimeout(stopVideo, 6000);
-						done = true;
-					}
-				}
-				function stopVideo() {
-					player.stopVideo();
-				}
-</script>
-<script>
 		$(document).ready(function() {
 			$('#portfolio').hide();
 			$('#info').hide();
@@ -169,13 +135,12 @@
 				$('#info').hide();
 			});
 
-		// 	$('blockquote').on('mouseover',function(){
-    // 		player.playVideo();
-		// 		});
-    //
-		// 		$('blockquote').on('mouseout',function(){
-    // player.pauseVideo();
-		// 		});
+			$('blockquote').on('mouseover', function() {
+				$('video').trigger('play');
+				});
+			$('blockquote').on('mouseout', function() {
+					$('video').trigger('pause');
+					});
 
 		});
 	</script>
