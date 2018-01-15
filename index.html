@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>AXEL G.</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="brutalism, brutalist, portfolio, graphic design, ux, ui, student" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@lXlON">
+	<meta name="twitter:title" content=" ">
+	<meta name="twitter:description" content=" ">
+	<meta name="twitter:creator" content="@lXlON">
+	<!-- Twitter Summary card images must be at least 120x120px -->
+	<meta name="twitter:image" content=" ">
+
+
+	<!-- Icons -->
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="assets/icons/manifest.json">
+	<link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- CSS  -->
+	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="lucida-text">
+	<div id="app" class="container-fluid">
+		<section id="header" class="site_header">
+			<div class="header_img">
+			</div>
+			<div class="header_text">
+				<h1 class="text-center baffle-longer fittext-h4 flow-text guard-text allcaps">
+				axel gueudin
+			</h1>
+			</div>
+			<div class="nav">
+			</div>
+		</section>
+		<section id="home" class="row">
+			<div class="work-toggle-container col s12 m6 l6">
+				<a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
+			</div>
+			<div class="about-toggle-container col s12 m6 l6">
+				<a class="about-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#about">about</a>
+			</div>
+		</section>
+		<section id="portfolio" class="row">
+			<div class="project-container col s12 m10 l10">
+				<div class="content">
+					<div class="project" v-for="project in projects">
+						<div class="slider" ref="slider">
+							<img id="image" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
+						</div>
+						<div class="description">
+							<header>
+								<p class="project-title">{{project.title}}</p>
+								<span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
+							</header>
+							<p class="details" v-html="project.description"></p>
+						</div>
+					</div>
+					<iframe width="450" height="900" src="assets\media\MANGANIME PROTOTYPE\index.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="work-close col s12 m2 l2">
+				<a href="" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
+			</div>
+		</section>
+		<section id="info" class="row">
+			<div class="about-close col s12 m2 l2">
+				<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
+			</div>
+			<div class="text-container col s12 m10 l10">
+				<h1>
+						Hi, I'm Axel Gueudin.
+						</h1>
+				<p class="col s12 m4 l4">
+					I'm originally from Rouen, France and now studying in Valenciennes, France. Email me if you have an interesting project or if you just want to say hello.
+				</p>
+				<blockquote>
+					DO WHAT YOU CAN'T
+				</blockquote>
+				<iframe id="player" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</div>
+
+	<!--  Scripts-->
+	<!-- VUE JS TEST -->
+	<script src="js/vue.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/brutalist.js"></script>
+	<script src="js/start.brutalizing.js"></script>
+	<script>
+				// 2. This code loads the IFrame Player API code asynchronously.
+	      var tag = document.createElement('script');
+
+	      tag.src = "https://www.youtube.com/iframe_api";
+	      var firstScriptTag = document.getElementsByTagName('script')[0];
+	      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	      // 3. This function creates an <iframe> (and YouTube player)
+	      //    after the API code downloads.
+				var player;
+				function onYouTubeIframeAPIReady() {
+				player = new YT.Player('player', {
+				height: '560',
+				width: '315',
+				videoId: 'jG7dSXcfVqE',
+				events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				}
+				});
+				}
+				// 4. The API will call this function when the video player is ready.
+				function onPlayerReady(event) {
+					event.target.playVideo();
+				}
+
+				// 5. The API calls this function when the player's state changes.
+				//    The function indicates that when playing a video (state=1),
+				//    the player should play for six seconds and then stop.
+				var done = false;
+				function onPlayerStateChange(event) {
+					if (event.data == YT.PlayerState.PLAYING && !done) {
+						setTimeout(stopVideo, 6000);
+						done = true;
+					}
+				}
+				function stopVideo() {
+					player.stopVideo();
+				}
+</script>
+<script>
+		$(document).ready(function() {
+			$('#portfolio').hide();
+			$('#info').hide();
+
+			$('.work-toggle-container a').on('click', function() {
+				$('.work-toggle-container').hide();
+				$('.about-toggle-container').hide();
+				$('#portfolio').show();
+
+			});
+
+			$('.btn-close').on('click', function() {
+				$('.work-toggle-container').show();
+				$('.about-toggle-container').show();
+				$('#portfolio').hide();
+			});
+
+			$('.about-toggle-container a').on('click', function() {
+				$('.work-toggle-container').hide();
+				$('.about-toggle-container').hide();
+				$('#info').show();
+			});
+
+			$('.btn-close').on('click', function() {
+				$('.work-toggle-container').show();
+				$('.about-toggle-container').show();
+				$('#info').hide();
+			});
+
+		// 	$('blockquote').on('mouseover',function(){
+    // 		player.playVideo();
+		// 		});
+    //
+		// 		$('blockquote').on('mouseout',function(){
+    // player.pauseVideo();
+		// 		});
+
+		});
+	</script>
+
+	<!-- TRACKING
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93046252-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+-->
+
+</body>
+
+</html>
