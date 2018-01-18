@@ -31,17 +31,16 @@
 
 <body class="lucida-text">
 	<div id="app" class="container-fluid">
-		<section id="header" class="site_header">
-			<div class="header_img">
-			</div>
-			<div class="header_text">
-				<h1 class="text-center baffle-longer fittext-h4 flow-text guard-text allcaps">
-				axel gueudin
+		<div id="loader-wrapper">
+			<div id="loader">
+				<h1 class="text-center baffle-longer fittext-h1 flow-text guard-text allcaps">
+			axel gueudin
 			</h1>
 			</div>
-			<div class="nav">
-			</div>
-		</section>
+
+			<div class="loader-section"></div>
+
+		</div>
 		<section id="home" class="row">
 			<div class="work-toggle-container col s12 m6 l6">
 				<a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
@@ -66,33 +65,41 @@
 						</div>
 					</div>
 					<div class="embed-responsive embed-responsive-16by9">
-  					<iframe class="embed-responsive-item" width="450" height="900" src="assets\media\MANGANIME PROTOTYPE\index.html" frameborder="0" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="450" height="900" src="assets\media\MANGANIME PROTOTYPE\index.html" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="work-close col s12 m2 l2">
-				<a href="" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
-			</div>
-		</section>
-		<section id="info" class="row">
-			<div class="about-close col s12 m2 l2">
 				<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
 			</div>
-			<div class="text-container col s12 m10 l10">
-				<h1>
-						Hi, I'm Axel Gueudin.
-				</h1>
-				<p class="col s12 m4 l4">
-					I'm originally from Rouen, France and now studying in Valenciennes, France. Email me if you have an interesting project or if you just want to say hello.
-				</p>
-				<blockquote class="col s12 s4 l4">
-					DO WHAT YOU CAN'T
-				</blockquote>
-				<div id="video" class="col s12 s4 l4">
-					<video type="video/mp4">
-						<source src="assets/media/do what you can't.mp4" type="video/mp4">
-					</video>
-				<p>© Casey Neistat</p>
+		</section>
+		<section id="info">
+			<div class="about-container row">
+				<div class="about-close col s12 m2 l2">
+					<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
+				</div>
+				<div class="text-container col s12 m10 l10">
+					<h1>
+							Hi, I'm Axel Gueudin.
+					</h1>
+					<p>
+						I'm originally from Rouen, France and now studying in Valenciennes, France.
+					</p>
+					<p>
+						I'm currently in a Master Graphic Design and Interactive Design.
+					</p>
+					<p>
+						Looking for an internship as a graphic designer or UX/UI designer for 3 months.
+					</p>
+					<p>
+						Tweet me if you have want to say hello or want to work with me.
+					</p>
+					<blockquote class="col s12 m4 l4">
+						DO WHAT YOU CAN'T
+					</blockquote>
+					<div class="col s12 m4 l4 gif">
+						<img class="responsive" src="assets/media/dwyc.gif"></img>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -107,6 +114,10 @@
 	<script src="js/start.brutalizing.js"></script>
 	<script>
 		$(document).ready(function() {
+			setTimeout(function() {
+				$('body').addClass('loaded');
+			}, 5000);
+
 			$('#portfolio').hide();
 			$('#info').hide();
 
@@ -137,10 +148,10 @@
 
 			$('blockquote').on('mouseover', function() {
 				$('video').trigger('play');
-				});
+			});
 			$('blockquote').on('mouseout', function() {
-					$('video').trigger('pause');
-					});
+				$('video').trigger('pause');
+			});
 
 		});
 	</script>

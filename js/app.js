@@ -3,29 +3,56 @@ var app = new Vue({
     data: {
       projects: [
       {
-        title: "Brutalist",
-        description: "LOREM IPSUM",
+        title: "BFM TV Rebrand",
+        description: "Student project - Made with a friend",
         currentNumber: 0,
         images : [
-                  {src: 'assets/images/brutalist001.jpg'},
-                  {src: 'assets/images/rough-concrete.jpg'},
-                  {src: 'assets/images/brutal-building.jpg'},
-                  {src: 'assets/images/spomenik.jpg'},
-                  {src: 'assets/images/capsule-tower.jpg'}
+                  {src: 'assets/images/bfm/logo.jpg'},
+                  {src: 'assets/images/bfm/business_cards.jpg'},
+                  {src: 'assets/images/bfm/logos.jpg'},
+                  {src: 'assets/images/bfm/wall_1.jpg'},
+                  {src: 'assets/images/bfm/wall_2.jpg'}
                 ]
       },
       {
-        title: "Brutalist",
-        description: "LOREM IPSUM",
+        title: "Prisme Brand",
+        description: "Student project - Made with a friend",
         currentNumber: 0,
         images : [
-                  {src: 'assets/images/rough-concrete.jpg'},
-                  {src: 'assets/images/brutalist001.jpg'},
-                  {src: 'assets/images/brutal-building.jpg'},
-                  {src: 'assets/images/spomenik.jpg'},
-                  {src: 'assets/images/capsule-tower.jpg'}
+                  {src: 'assets/images/prisme/logo.jpg'},
+                  {src: 'assets/images/prisme/carte_mockup.jpg'},
+                  {src: 'assets/images/prisme/logo_multi.jpg'},
+                  {src: 'assets/images/prisme/mockup_presentation.jpg'},
+                  {src: 'assets/images/prisme/mockup_vinyle.jpg'}
                 ]
       },
+      {
+        title: "Cartoon Network Rebrand",
+        description: "Student project - WIP",
+        currentNumber: 0,
+        images : [
+                  {src: 'assets/images/cn/cartoon_network.jpg'},
+                  {src: 'assets/images/cn/gumball.jpg'},
+                  {src: 'assets/images/cn/adventure_time.jpg'},
+                  {src: 'assets/images/cn/regular_show.jpg'}
+                ]
+      },
+      {
+        title: "Devoteam",
+        description: "Internship - various creations",
+        currentNumber: 0,
+        images : [
+                  {src: 'assets/images/devoteam/devocatcher.png'},
+                  {src: 'assets/images/devoteam/workspace.png'},
+                  {src: 'assets/images/devoteam/phare.png'},
+                  {src: 'assets/images/devoteam/kite.png'},
+                  {src: 'assets/images/devoteam/hive.png'},
+                  {src: 'assets/images/devoteam/kc.png'},
+                  {src: 'assets/images/devoteam/cubes.png'},
+                  {src: 'assets/images/devoteam/column.png'},
+                  {src: 'assets/images/devoteam/lines.png'}
+                ]
+      }
     ]
   },
     methods: {
