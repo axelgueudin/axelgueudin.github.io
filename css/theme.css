@@ -10,13 +10,9 @@
 }
 
 #loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 300px;
-  height: 300px;
-  margin: -75px 0 0 -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1001;
 }
 
@@ -74,7 +70,7 @@
 
 /* Effet underline link */
 
-#home a:before {
+a:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -84,7 +80,7 @@
   transition: 0.4s;
 }
 
-#home a:after {
+a:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -94,7 +90,7 @@
   transition: 0.4s;
 }
 
-#home a:hover:after {
+a:hover:after {
   width: 100%;
 }
 
@@ -102,6 +98,22 @@
 
 .project {
   max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* text img  */
+.counter {
+  float: right;
+  clear: both;
+}
+
+.description {
+  margin: 10px 0 10px 0;
+  font-size: 1.2rem;
 }
 
 /* link toggle */
@@ -117,6 +129,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fixed-cross {
+  margin: auto;
+  position: fixed;
 }
 
 .work-close {
@@ -156,7 +173,9 @@ blockquote:hover+.gif {
   display: block;
 }
 
-blockquote {}
+blockquote {
+  cursor: default;
+}
 
 /* effet blur */
 
@@ -171,7 +190,7 @@ a {
 }
 
 #image:hover {
-  cursor: pointer;
+  cursor: e-resize;
 }
 
 /* Effet glitched hover framework */

@@ -8,8 +8,8 @@ var app = new Vue({
         currentNumber: 0,
         images : [
                   {src: 'assets/images/bfm/logo.jpg'},
-                  {src: 'assets/images/bfm/business_cards.jpg'},
                   {src: 'assets/images/bfm/logos.jpg'},
+                  {src: 'assets/images/bfm/business_cards.jpg'},
                   {src: 'assets/images/bfm/wall_1.jpg'},
                   {src: 'assets/images/bfm/wall_2.jpg'}
                 ]
@@ -20,8 +20,8 @@ var app = new Vue({
         currentNumber: 0,
         images : [
                   {src: 'assets/images/prisme/logo.jpg'},
-                  {src: 'assets/images/prisme/carte_mockup.jpg'},
                   {src: 'assets/images/prisme/logo_multi.jpg'},
+                  {src: 'assets/images/prisme/carte_mockup.jpg'},
                   {src: 'assets/images/prisme/mockup_presentation.jpg'},
                   {src: 'assets/images/prisme/mockup_vinyle.jpg'}
                 ]
