@@ -9,7 +9,7 @@ var app = new Vue({
         images : [
                   {src: 'assets/images/bfm/logo.jpg'},
                   {src: 'assets/images/bfm/logos.jpg'},
-                  {src: 'assets/images/bfm/business_cards.jpg'},
+                  {src: 'assets/images/bfm/cards.jpg'},
                   {src: 'assets/images/bfm/wall_1.jpg'},
                   {src: 'assets/images/bfm/wall_2.jpg'}
                 ]
@@ -22,8 +22,8 @@ var app = new Vue({
                   {src: 'assets/images/prisme/logo.jpg'},
                   {src: 'assets/images/prisme/logo_multi.jpg'},
                   {src: 'assets/images/prisme/carte_mockup.jpg'},
-                  {src: 'assets/images/prisme/mockup_presentation.jpg'},
-                  {src: 'assets/images/prisme/mockup_vinyle.jpg'}
+                  {src: 'assets/images/prisme/presentation.jpg'},
+                  {src: 'assets/images/prisme/vinyle.jpg'}
                 ]
       },
       {
@@ -31,7 +31,7 @@ var app = new Vue({
         description: "Student project - WIP",
         currentNumber: 0,
         images : [
-                  {src: 'assets/images/cn/cartoon_network.jpg'},
+                  {src: 'assets/images/cn/cn.jpg'},
                   {src: 'assets/images/cn/gumball.jpg'},
                   {src: 'assets/images/cn/adventure_time.jpg'},
                   {src: 'assets/images/cn/regular_show.jpg'}
@@ -42,7 +42,7 @@ var app = new Vue({
         description: "Internship - various creations",
         currentNumber: 0,
         images : [
-                  {src: 'assets/images/devoteam/devocatcher.png'},
+                  {src: 'assets/images/devoteam/catcher.png'},
                   {src: 'assets/images/devoteam/workspace.png'},
                   {src: 'assets/images/devoteam/phare.png'},
                   {src: 'assets/images/devoteam/kite.png'},
