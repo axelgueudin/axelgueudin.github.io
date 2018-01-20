@@ -21,7 +21,7 @@ var app = new Vue({
         images : [
                   {src: 'assets/images/prisme/logo.jpg'},
                   {src: 'assets/images/prisme/logo_multi.jpg'},
-                  {src: 'assets/images/prisme/carte_mockup.jpg'},
+                  {src: 'assets/images/prisme/carte.jpg'},
                   {src: 'assets/images/prisme/presentation.jpg'},
                   {src: 'assets/images/prisme/vinyle.jpg'}
                 ]
