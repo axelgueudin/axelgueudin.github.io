@@ -1,6 +1,6 @@
 body {
   color: blue;
-  /* cursor: url(assets/icons/cursor-default.png), auto;  */
+  /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
 
 /* loader */
@@ -102,12 +102,12 @@ a:after {
   bottom: 0;
   left: 0;
   width: 0%;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid lime;
   transition: 0.4s;
 }
 
 a:hover {
-  color: yellow;
+  color: lime;
 }
 
 a:hover:after {
@@ -222,6 +222,7 @@ a:active, .work-toggle:active, .about-toggle:active {
 a {
   position: relative;
   color: inherit;
+  /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
 
 #image:hover {
