@@ -50,32 +50,32 @@
 			</div>
 		</section>
 		<section id="portfolio" class="row">
-			<div class="project-container col s12 m10 l10">
-				<div class="content">
-					<div class="project" v-for="project in projects">
-						<div class="slider" ref="slider">
-							<img id="image" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
-						</div>
-						<div class="description">
-							<header>
-								<p class="project-title">{{project.title}}</p>
-								<span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
-							</header>
-							<p class="details" v-html="project.description"></p>
-						</div>
-					</div>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="450" height="900" src="assets\media\manganime_prototype\index.html" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<p class="description">
-						MANGANIME <br /> Mobile app prototype - student project - made with a friend.
-					</p>
-				</div>
-			</div>
 			<div class="work-close col s12 m2 l2">
 				<div class="fixed-cross">
 					<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
 				</div>
+			</div>
+			<div class="project-container col s12 m10 l10">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="project col s12 m12 l12" v-for="project in projects">
+						<div class="slider" ref="slider">
+							<img id="image" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
+						</div>
+						<div class="description">
+							<p class="project-title flow-text">{{project.title}}</p>
+								<span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
+							<p class="details flow-text" v-html="project.description"></p>
+						</div>
+					</div>
+					<div id="prototype" class="col s12 m12 l12">
+						<iframe class="responsive" width="100%" height="900" src="assets\media\manganime_prototype\index.html" frameborder="0"></iframe>
+						<p class="description flow-text">
+							MANGANIME <br /> Mobile app prototype - student project - made with a friend.
+						</p>
+					</div>
+				</div>
+			</div>
 			</div>
 		</section>
 		<section id="info">

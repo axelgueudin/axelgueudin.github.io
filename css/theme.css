@@ -77,24 +77,11 @@ body {
     height: 50vh !important;
   }
 
-  .project-container {
-    position: absolute;
-    top: 75px;
-    border-right: none !important;
-  }
-
-  .text-container {
+  .project-container, .text-container {
     border-left: none !important;
   }
 
-  .about-close {
-    position: relative !important;
-    top: 0;
-    height: auto !important;
-    border-bottom: solid 1px blue;
-  }
-
-  .work-close {
+  .about-close, .work-close {
     position: relative !important;
     top: 0;
     height: auto !important;
@@ -106,8 +93,9 @@ body {
     top: 0;
   }
 
-
-
+  #prototype {
+    display: none;
+  }
 }
 
 .site_header {}
@@ -151,7 +139,6 @@ a:hover:after {
 img {
   max-width: 100%;
   height: auto;
-  box-shadow:
 }
 
 /* text img  */
@@ -162,8 +149,7 @@ img {
 }
 
 .description {
-  margin: 10px 0 10px 0;
-  font-size: 1.2rem;
+  margin: 10px;
 }
 
 /* link toggle */
@@ -203,7 +189,7 @@ img {
 }
 
 .project-container {
-  border-right: solid 1px blue;
+  border-left: solid 1px blue;
   width: 100%;
   display: flex;
   align-items: center;
