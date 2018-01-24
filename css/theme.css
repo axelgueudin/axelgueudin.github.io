@@ -64,21 +64,49 @@ body {
   color: #000;
 }
 
-/* changement bordure responsive */
+/* changement responsive */
 
 @media (max-width: 600px) {
   .work-toggle-container {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px blue;
     border-right: none !important;
+    height: 50vh !important;
+  }
+
+  .about-toggle-container {
+    height: 50vh !important;
   }
 
   .project-container {
+    position: absolute;
+    top: 75px;
     border-right: none !important;
   }
 
   .text-container {
     border-left: none !important;
   }
+
+  .about-close {
+    position: relative !important;
+    top: 0;
+    height: auto !important;
+    border-bottom: solid 1px blue;
+  }
+
+  .work-close {
+    position: relative !important;
+    top: 0;
+    height: auto !important;
+    border-bottom: solid 1px blue;
+  }
+
+  .fixed-cross {
+    position: relative !important;
+    top: 0;
+  }
+
+
 
 }
 
@@ -123,6 +151,7 @@ a:hover:after {
 img {
   max-width: 100%;
   height: auto;
+  box-shadow:
 }
 
 /* text img  */
@@ -224,6 +253,10 @@ a {
   color: inherit;
   /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
+
+/* #image {
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+} */
 
 #image:hover {
   cursor: e-resize;
