@@ -6,16 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 	<title>AXEL G.</title>
 	<meta name="description" content="" />
-	<meta name="keywords" content="brutalism, brutalist, portfolio, graphic design, ux, ui, student" />
+	<meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student" />
 
-	<!-- Twitter Card data -->
+	<!-- Twitter Card data
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@lXlON">
 	<meta name="twitter:title" content=" ">
 	<meta name="twitter:description" content=" ">
 	<meta name="twitter:creator" content="@lXlON">
-	<!-- Twitter Summary card images must be at least 120x120px -->
-	<meta name="twitter:image" content=" ">
+	Twitter Summary card images must be at least 120x120px
+	<meta name="twitter:image" content=" ">  -->
 
 
 	<!-- Icons -->
@@ -60,7 +60,7 @@
 					<div class="row">
 						<div class="project col s12 m12 l12" v-for="project in projects">
 						<div class="slider" ref="slider">
-							<img id="image" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
+							<img id="image" class="" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
 						</div>
 						<div class="description">
 							<p class="project-title flow-text">{{project.title}}</p>
@@ -98,7 +98,8 @@
 								I'm currently in a Master Graphic Design and Interactive Design.
 							</p>
 							<p class="flow-text">
-								Looking for an internship as a graphic designer or UX/UI designer for 3 months.
+								Looking for an internship as a graphic designer or UX/UI designer for 6 months.
+								Starting January 2019.
 							</p>
 							<p class="flow-text">
 								<a href="https://twitter.com/lXlON" target="_blank">Tweet at me</a> if you want to say hello or want to work with me.
@@ -131,12 +132,6 @@
 								<br />
 							</p>
 						</div>
-					<blockquote class="col s12 m11 l11">
-						<a href="https://www.youtube.com/watch?v=jG7dSXcfVqE" target="_blank">DO WHAT YOU CAN'T</a>
-					</blockquote>
-					<div class="col s12 m6 l6 gif">
-						<img class="responsive" src="assets/media/dwyc.gif"></img>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -186,6 +181,17 @@
 
 		});
 	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115548466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115548466-1');
+</script>
+
 
 	<!-- TRACKING
 <script>

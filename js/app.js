@@ -2,6 +2,66 @@ var app = new Vue({
   el: '#app',
   data: {
     projects: [{
+      title: "Devoteam",
+      description: "Internship - various creations",
+      currentNumber: 0,
+      images: [{
+          src: 'assets/images/devoteam/catcher.png'
+        },
+        {
+          src: 'assets/images/devoteam/workspace.png'
+        },
+        {
+          src: 'assets/images/devoteam/phare.png'
+        },
+        {
+          src: 'assets/images/devoteam/kite.png'
+        },
+        {
+          src: 'assets/images/devoteam/hive.png'
+        },
+        {
+          src: 'assets/images/devoteam/kc.png'
+        },
+        {
+          src: 'assets/images/devoteam/cubes.png'
+        },
+        {
+          src: 'assets/images/devoteam/column.png'
+        },
+        {
+          src: 'assets/images/devoteam/lines.png'
+        }
+      ]
+    },
+      {
+        title: "Random",
+        description: "Various personnal creations",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/random/atlas_m.jpg'
+          },
+          {
+            src: 'assets/images/random/les_pluriels.jpg'
+          },
+          {
+            src: 'assets/images/random/multimedia_manifesto_m.jpg'
+          },
+          {
+            src: 'assets/images/random/psyche.png'
+          },
+          {
+            src: 'assets/images/random/pub.jpg'
+          },
+          {
+            src: 'assets/images/random/samurai_sith.jpg'
+          },
+          {
+            src: 'assets/images/random/spoof_ad.jpg'
+          }
+        ]
+      },
+      {
         title: "BFM TV Rebrand",
         description: "Student project - Made with a friend",
         currentNumber: 0,
@@ -61,39 +121,6 @@ var app = new Vue({
           }
         ]
       },
-      {
-        title: "Devoteam",
-        description: "Internship - various creations",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/devoteam/catcher.png'
-          },
-          {
-            src: 'assets/images/devoteam/workspace.png'
-          },
-          {
-            src: 'assets/images/devoteam/phare.png'
-          },
-          {
-            src: 'assets/images/devoteam/kite.png'
-          },
-          {
-            src: 'assets/images/devoteam/hive.png'
-          },
-          {
-            src: 'assets/images/devoteam/kc.png'
-          },
-          {
-            src: 'assets/images/devoteam/cubes.png'
-          },
-          {
-            src: 'assets/images/devoteam/column.png'
-          },
-          {
-            src: 'assets/images/devoteam/lines.png'
-          }
-        ]
-      }
     ]
   },
   methods: {
