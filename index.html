@@ -2,200 +2,199 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-	<title>AXEL G.</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>AXEL G.</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student, looking for a internship, internship," />
 
-	<!-- Twitter Card data
+  <!-- Twitter Card data-->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@lXlON">
-	<meta name="twitter:title" content=" ">
-	<meta name="twitter:description" content=" ">
+	<meta name="twitter:title" content="@lXlON">
+	<meta name="twitter:description" content="Graphic Design Student">
 	<meta name="twitter:creator" content="@lXlON">
-	Twitter Summary card images must be at least 120x120px
-	<meta name="twitter:image" content=" ">  -->
+	<meta name="twitter:image" content=" ">
 
 
-	<!-- Icons -->
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-	<link rel="manifest" href="assets/icons/manifest.json">
-	<link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-	<!-- CSS  -->
-	<link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/manifest.json">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- CSS  -->
+  <link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body class="lucida-text">
-	<div id="app" class="container-fluid">
-		<div id="loader-wrapper" class="row">
-			<div id="loader" class="col s12 m12 l12">
-				<h1 class="text-center baffle-longer fittext-h1 flow-text guard-text allcaps">
+  <div id="app" class="container-fluid">
+    <div id="loader-wrapper" class="row">
+      <div id="loader" class="col s12 m12 l12">
+        <h1 class="text-center baffle-longer fittext-h1 flow-text guard-text allcaps">
 			axel gueudin
 			</h1>
-			</div>
+      </div>
 
-			<div class="loader-section"></div>
+      <div class="loader-section"></div>
 
-		</div>
-		<section id="home" class="row">
-			<div class="work-toggle-container col s12 m6 l6">
-				<a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
-			</div>
-			<div class="about-toggle-container col s12 m6 l6">
-				<a class="about-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#about">about</a>
-			</div>
-		</section>
-		<section id="portfolio" class="row">
-			<div class="work-close col s12 m2 l2">
-				<div class="fixed-cross">
-					<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
-				</div>
-			</div>
-			<div class="project-container col s12 m10 l10">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="project col s12 m12 l12" v-for="project in projects">
-						<div class="slider" ref="slider">
-							<img id="image" class="" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
-						</div>
-						<div class="description">
-							<p class="project-title flow-text">{{project.title}}</p>
-								<span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
-							<p class="details flow-text" v-html="project.description"></p>
-						</div>
-					</div>
-					<div id="prototype" class="col s12 m12 l12">
-						<iframe class="responsive" width="100%" height="900" src="assets\media\manganime_prototype\index.html" frameborder="0"></iframe>
-						<p class="description flow-text">
-							MANGANIME <br /> Mobile app prototype - student project - made with a friend.
-						</p>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-		<section id="info">
-			<div class="about-container row">
-				<div class="about-close col s12 m2 l2">
-					<div class="fixed-cross">
-						<a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
-					</div>
-				</div>
-				<div class="text-container col s12 m10 l10">
-					<div class="row">
-						<div class="col s12 m6 l6">
-							<h1 class="fittext-h1">
+    </div>
+    <section id="home" class="row">
+      <div class="work-toggle-container col s12 m6 l6">
+        <a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
+      </div>
+      <div class="about-toggle-container col s12 m6 l6">
+        <a class="about-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#about">about</a>
+      </div>
+    </section>
+    <section id="portfolio" class="row">
+      <div class="work-close col s12 m2 l2">
+        <div class="fixed-cross">
+          <a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
+        </div>
+      </div>
+      <div class="project-container col s12 m10 l10">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="project col s12 m12 l12" v-for="project in projects">
+              <div class="slider" ref="slider">
+                <img id="image" class="" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
+              </div>
+              <div class="description">
+                <p class="project-title flow-text">{{project.title}}</p>
+                <span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
+                <p class="details flow-text" v-html="project.description"></p>
+              </div>
+            </div>
+            <div id="prototype" class="col s12 m12 l12">
+              <iframe class="responsive" width="100%" height="900" src="assets\media\manganime_prototype\index.html" frameborder="0"></iframe>
+              <p class="description flow-text">
+                MANGANIME <br /> Mobile app prototype - student project - made with a friend.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info">
+      <div class="about-container row">
+        <div class="about-close col s12 m2 l2">
+          <div class="fixed-cross">
+            <a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
+          </div>
+        </div>
+        <div class="text-container col s12 m10 l10">
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <h1 class="fittext-h1">
 									Hi, I'm Axel Gueudin.
 							</h1>
-							<p class="flow-text">
-								I'm originally from Rouen, France and now studying in Valenciennes, France.
-							</p>
-							<p class="flow-text">
-								I'm currently in a Master Graphic Design and Interactive Design.
-							</p>
-							<p class="flow-text">
-								Looking for an internship as a graphic designer or UX/UI designer for 6 months.
-								Starting January 2019.
-							</p>
-							<p class="flow-text">
-								<a href="https://twitter.com/lXlON" target="_blank">Tweet at me</a> if you want to say hello or want to work with me.
-							</p>
-							<p class="flow-text">
-								<a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank">LinkedIn</a> /// <a href="https://github.com/gueudaxe/" target="_blank">Github</a> /// <a href="https://twitter.com/lXlON" target="
+              <p class="flow-text">
+                I'm originally from Rouen, France and now studying in Valenciennes, France.
+              </p>
+              <p class="flow-text">
+                I'm currently in a Master Graphic Design and Interactive Design.
+              </p>
+              <p class="flow-text">
+                Looking for an internship as a graphic designer or "ux/ui designer" for 6 months. Starting January 2019.
+              </p>
+              <p class="flow-text">
+                <a href="https://twitter.com/lXlON" target="_blank">Tweet at me</a> if you want to say hello or want to work with me.
+              </p>
+              <p class="flow-text">
+                <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank">LinkedIn</a> /// <a href="https://github.com/gueudaxe/" target="_blank">Github</a> /// <a href="https://twitter.com/lXlON" target="
 								">Twitter</a>
-							</p>
-						</div>
-						<div class="col s12 m5 l5">
-							<h3 class="fittext-h3">Experience</h3>
-							<p class="flow-text">Internship
-							</br/>
-							Graphic Designer - Digiworks - April &rarr; July 2018
-							<br />
-								Graphic Designer - Devoteam - February &rarr; June 2017
-								<br />Graphic Designer - ESPE Rouen - April &rarr; June 2016
-							</p>
-							<h3 class="fittext-h3">Education</h3>
-							<p class="flow-text">
-								Master DGDI - Valenciennes - 2017/2019
-								<br /> Licence Pro ATC - Rouen - 2016/2017
-								<br /> DUT MMI - Rouen - 2014/2016<br />
-							</p>
-							<h3 class="fittext-h3">Skills</h3>
-							<p class="flow-text">
-								Graphic design
-								<br /> Branding
-								<br /> Illustration
-								<br /> UX/UI
-								<br /> Web
-								<br />
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+              </p>
+            </div>
+            <div class="col s12 m5 l5">
+              <h3 class="fittext-h3">Experience</h3>
+              <p class="flow-text">Internship
+                </br/> Graphic Designer - Digiworks - April &rarr; July 2018
+                <br /> Graphic Designer - Devoteam - February &rarr; June 2017
+                <br />Graphic Designer - ESPE Rouen - April &rarr; June 2016
+              </p>
+              <h3 class="fittext-h3">Education</h3>
+              <p class="flow-text">
+                Master DGDI - Valenciennes - 2017/2019
+                <br /> Licence Pro ATC - Rouen - 2016/2017
+                <br /> DUT MMI - Rouen - 2014/2016<br />
+              </p>
+              <h3 class="fittext-h3">Skills</h3>
+              <p class="flow-text">
+                Graphic design
+                <br /> Branding
+                <br /> Illustration
+                <br /> UX/UI
+                <br /> Web
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-	<!--  Scripts-->
-	<!-- VUE JS TEST -->
-	<script src="js/vue.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/brutalist.js"></script>
-	<script src="js/start.brutalizing.js"></script>
-	<script>
-		$(document).ready(function() {
-			setTimeout(function() {
-				$('body').addClass('loaded');
-			}, 5000);
+  <!--  Scripts-->
+  <!-- VUE JS TEST -->
+  <script src="js/vue.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/brutalist.js"></script>
+  <script src="js/start.brutalizing.js"></script>
+  <script>
+    $(document).ready(function() {
+      setTimeout(function() {
+        $('body').addClass('loaded');
+      }, 5000);
 
-			$('#portfolio').hide();
-			$('#info').hide();
+      $('#portfolio').hide();
+      $('#info').hide();
 
-			$('.work-toggle-container a').on('click', function() {
-				$('.work-toggle-container').hide();
-				$('.about-toggle-container').hide();
-				$('#portfolio').show();
+      $('.work-toggle-container a').on('click', function() {
+        $('.work-toggle-container').hide();
+        $('.about-toggle-container').hide();
+        $('#portfolio').show();
 
-			});
+      });
 
-			$('.btn-close').on('click', function() {
-				$('.work-toggle-container').show();
-				$('.about-toggle-container').show();
-				$('#portfolio').hide();
-			});
+      $('.btn-close').on('click', function() {
+        $('.work-toggle-container').show();
+        $('.about-toggle-container').show();
+        $('#portfolio').hide();
+      });
 
-			$('.about-toggle-container a').on('click', function() {
-				$('.work-toggle-container').hide();
-				$('.about-toggle-container').hide();
-				$('#info').show();
-			});
+      $('.about-toggle-container a').on('click', function() {
+        $('.work-toggle-container').hide();
+        $('.about-toggle-container').hide();
+        $('#info').show();
+      });
 
-			$('.btn-close').on('click', function() {
-				$('.work-toggle-container').show();
-				$('.about-toggle-container').show();
-				$('#info').hide();
-			});
+      $('.btn-close').on('click', function() {
+        $('.work-toggle-container').show();
+        $('.about-toggle-container').show();
+        $('#info').hide();
+      });
 
-		});
-	</script>
+    });
+  </script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115548466-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115548466-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-115548466-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115548466-1');
+  </script>
 
 
-	<!-- TRACKING
+  <!-- TRACKING
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

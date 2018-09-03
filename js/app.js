@@ -1,9 +1,43 @@
 var app = new Vue({
   el: '#app',
   data: {
-    projects: [{
-      title: "Devoteam",
-      description: "Internship - various creations",
+    projects: [
+      {
+        title: "Digiworks - Graphic Designer Intern",
+        description: "Game assets / Game Interface / Illustration",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/digiworks/game_assets_1.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/game_assets_2.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/game_assets_3.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/game_assets_4.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/game_assets_5.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/interface_1.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/interface_2.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/illu_1.jpg'
+          },
+          {
+            src: 'assets/images/digiworks/illu_2.jpg'
+          }
+        ]
+      },
+      {
+      title: "Devoteam - Graphic Designer Intern",
+      description: "Illustration / Logo / Pattern",
       currentNumber: 0,
       images: [{
           src: 'assets/images/devoteam/catcher.png'
