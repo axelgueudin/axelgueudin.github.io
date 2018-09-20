@@ -97,7 +97,7 @@ var app = new Vue({
       },
       {
         title: "BFM TV Rebrand",
-        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/'>Sarah Bance</a>",
+        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank'>Sarah Bance</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/bfm/logo.jpg'
@@ -118,7 +118,7 @@ var app = new Vue({
       },
       {
         title: "Prisme Brand",
-        description: "Student project - Made with <a href='https://www.behance.net/Mrntrmz'>Marine Termoz</a>",
+        description: "Student project - Made with <a href='https://www.behance.net/Mrntrmz' target='_blank'>Marine Termoz</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/prisme/logo.jpg'
