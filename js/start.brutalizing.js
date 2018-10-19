@@ -2,7 +2,7 @@
 /* NOTE: This script is must be UTF-8 encoded, so as to ensure obfuscated character rendering on Baffle */
 
 $(document).ready(function(){
-	
+
 /* FITTEXT */
 $(".fittext").fitText();
 $(".fittext-compress").fitText(2.2); /* Increases compression */
@@ -18,7 +18,7 @@ $(".fittext-h6").fitText(1.5, { minFontSize: '12px', maxFontSize: '24px' }); /* 
 $('.stack-auto').each(function(index) {
 	$(this).css("z-index", index);
 });
-	
+
 /* Equal Heights */
 $('.equal-height').matchHeight({
 	byRow: true,
@@ -26,7 +26,7 @@ $('.equal-height').matchHeight({
     target: null,
     remove: false
 });
-	
+
 /* Blinker Fluid */
 $('.blink').blink({delay: 350});
 $('.blink-slow').blink({delay: 600});
@@ -36,7 +36,7 @@ $('.blink-182').blink({delay: 182});
 /* BAFFLE */
 /* Animation speed value can be increased or decreased. Same with duration */
 var b = baffle('.baffle', { characters: '█▓▒░', speed: 150 }).reveal(2500); /* Runs animation only once, upon page load */
-var bl = baffle('.baffle-longer', { characters: '█▓▒░', speed: 150, duration: 3000 }).reveal(3000); /* Animation duration set to 3 seconds */
+var bl = baffle('.baffle-longer', { characters: '█▓▒░', speed: 150, duration: 2000 }).reveal(1000); /* Animation duration set to 3 seconds */
 var bp = baffle('.baffle-prolonged', { characters:'█▓▒░', speed: 300, duration: 10000 }).reveal(10000); /* Animation duration set to 10 seconds */
 var bf = baffle('.baffle-forever', {characters: '█▓▒░', speed: 150}).start(); /* Animation continues on an endless loop */
 
