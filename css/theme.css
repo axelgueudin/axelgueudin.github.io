@@ -1,7 +1,25 @@
+@font-face {
+    font-family: Aktiv Grotesk Bold ;
+    src: url(../fonts/Aktiv_Grotesk_W01_Bold.ttf);
+}
+
+@font-face {
+    font-family: Aktiv Grotesk Regular ;
+    src: url(../fonts/Aktiv_Grotesk_W06_Regular.ttf);
+}
+
+@font-face {
+    font-family: Aktiv Grotesk Italic ;
+    src: url(../fonts/Aktiv_Grotesk_W06_Italic.ttf);
+}
+
 body {
   color: blue;
+  font-family: 'Aktiv Grotesk Bold', sans-serif;
   /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
+
+
 
 ::selection {
   background: blue; /* WebKit/Blink Browsers */
