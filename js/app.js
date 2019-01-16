@@ -69,33 +69,6 @@ var app = new Vue({
       ]
     },
       {
-        title: "Random",
-        description: "Various personnal creations",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/random/atlas_m.jpg'
-          },
-          {
-            src: 'assets/images/random/les_pluriels.jpg'
-          },
-          {
-            src: 'assets/images/random/multimedia_manifesto_m.jpg'
-          },
-          {
-            src: 'assets/images/random/psyche.png'
-          },
-          {
-            src: 'assets/images/random/pub.jpg'
-          },
-          {
-            src: 'assets/images/random/samurai_sith.jpg'
-          },
-          {
-            src: 'assets/images/random/spoof_ad.jpg'
-          }
-        ]
-      },
-      {
         title: "BFM TV Rebrand",
         description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank'>Sarah Bance</a>",
         currentNumber: 0,
@@ -138,20 +111,29 @@ var app = new Vue({
         ]
       },
       {
-        title: "Cartoon Network Rebrand",
-        description: "Student project - Abandonned",
+        title: "Random",
+        description: "Various personnal creations",
         currentNumber: 0,
         images: [{
-            src: 'assets/images/cn/cn.jpg'
+            src: 'assets/images/random/atlas_m.jpg'
           },
           {
-            src: 'assets/images/cn/gumball.jpg'
+            src: 'assets/images/random/holoback.jpg'
           },
           {
-            src: 'assets/images/cn/adventure_time.jpg'
+            src: 'assets/images/random/les_pluriels.jpg'
           },
           {
-            src: 'assets/images/cn/regular_show.jpg'
+            src: 'assets/images/random/multimedia_manifesto_m.jpg'
+          },
+          {
+            src: 'assets/images/random/psyche.png'
+          },
+          {
+            src: 'assets/images/random/pub.jpg'
+          },
+          {
+            src: 'assets/images/random/spoof_ad.jpg'
           }
         ]
       },

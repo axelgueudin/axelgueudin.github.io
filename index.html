@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>AXEL G.</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student, looking for a internship, internship," />
+  <meta name="description" content="Axel Gueudin, graphiste étudiant (et bientot indépendant ?) prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI" />
+  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence, 76000 " />
 
   <!-- Twitter Card data-->
 	<meta name="twitter:card" content="summary">
@@ -14,7 +14,7 @@
 	<meta name="twitter:title" content="@lXlON">
 	<meta name="twitter:description" content="Graphic Design Student">
 	<meta name="twitter:creator" content="@lXlON">
-	<meta name="twitter:image" content=" ">
+	<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1053695411540709376/UT0qSAoD_400x400.jpg">
 
 
   <!-- Icons -->
@@ -59,7 +59,7 @@
           <div class="row">
             <div class="project col s12 m12 l12" v-for="project in projects">
               <div class="slider" ref="slider">
-                <img id="image" class="" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
+                <img id="image" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" />
               </div>
               <div class="description">
                 <p class="project-title flow-text">{{project.title}}</p>
@@ -91,39 +91,42 @@
 									Hi, I'm Axel Gueudin.
 							</h1>
               <p class="flow-text">
-                I'm originally from Rouen, France and now studying in Valenciennes, France.
+                Rouen - Valenciennes.
               </p>
               <p class="flow-text">
-                I'm currently in a Master Graphic Design and Interactive Design.
-              </p>
-              <p class="flow-text">
-                Looking for an internship as a graphic designer or "ux/ui designer" for 6 months. Starting January 2019.
+                Currently in a Master Graphic & Interactive Design.
               </p>
               <p class="flow-text">
                 <a href="https://twitter.com/lXlON" target="_blank">Tweet at me</a> if you want to say hello or want to work with me.
               </p>
               <p class="flow-text">
-                <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank">LinkedIn</a> /// <a href="https://github.com/gueudaxe/" target="_blank">Github</a> /// <a href="https://twitter.com/lXlON" target="
-								">Twitter</a>
+                <a href="https://twitter.com/lXlON" target="_blank">Twitter</a>
+                 ///
+                 <a href="https://dribbble.com/lXlON" target="_blank">Dribbble</a>
+                ///
+                <a href="https://github.com/gueudaxe/" target="_blank">Github</a>
+                ///
+                <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank">LinkedIn</a>
+              </p>
+
+              <h1 class="fittext-h1">Experience</h1>
+              <h2 class="internship">Internship</h2>
+              <p class="flow-text">
+              <a href="https://www.publipress.fr/" target="_blank">Publipress</a> - January &rarr; ??? 2019
+              <br/> <a href="https://www.digiworks.fr/" target="_blank">Digiworks</a> - April &rarr; July 2018
+              <br/> <a href="https://www.devoteam.com/" target="_blank">Devoteam</a> - February &rarr; June 2017
+              <br/> <a href="http://espe.univ-rouen.fr/" target="_blank">Publipress</a> - April &rarr; June 2016
               </p>
             </div>
-            <div class="col s12 m5 l5">
-              <h3 class="fittext-h3">Experience</h3>
-              <p class="flow-text">Internship
-                </br/> Graphic Designer - Digiworks - April &rarr; July 2018
-                <br /> Graphic Designer - Devoteam - February &rarr; June 2017
-                <br />Graphic Designer - ESPE Rouen - April &rarr; June 2016
-              </p>
-              <h3 class="fittext-h3">Education</h3>
+            <div class="col s12 m6 l6">
+              <h1 class="fittext-h1">Education</h1>
               <p class="flow-text">
-                Master DGDI - Valenciennes - 2017/2019
-                <br /> Licence Pro ATC - Rouen - 2016/2017
-                <br /> DUT MMI - Rouen - 2014/2016<br />
+                Master DGDI - Valenciennes - 2017 &rarr; 2019
+                <br /> Licence Pro ATC - Rouen - 2016 &rarr; 2017
+                <br /> DUT MMI - Rouen - 2014 &rarr; 2016<br />
               </p>
-              <h3 class="fittext-h3">Skills</h3>
-              <p class="flow-text">
-                Graphic design
-                <br /> Branding
+              <h1 class="fittext-h1">Skills</h1>
+              <p class="flow-text">Branding
                 <br /> Illustration
                 <br /> UX/UI
                 <br /> Web

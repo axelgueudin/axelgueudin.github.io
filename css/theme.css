@@ -19,8 +19,6 @@ body {
   /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
 
-
-
 ::selection {
   background: blue; /* WebKit/Blink Browsers */
 }
@@ -31,6 +29,10 @@ body {
 /* img[alt=""], img:not([alt]) {
   filter: grayscale(100%);
 } */
+
+.internship{
+  font-size: 1.1rem;
+}
 
 /* loader */
 
