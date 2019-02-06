@@ -2,7 +2,14 @@ plugins:
   - jekyll-seo-tag
   
 twitter:
- username: benbalter
+ username: lXlON
  card: summary
+
+social:
+  name: Axel Gueudin
+  links:
+    - https://twitter.com/lXlON
+    - https://www.linkedin.com/in/axel-gueudin-b8b059121
+    - https://github.com/gueudaxe
 
 
