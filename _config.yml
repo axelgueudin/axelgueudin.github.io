@@ -1,2 +1,8 @@
 plugins:
   - jekyll-seo-tag
+  
+twitter:
+ username: benbalter
+ card: summary
+
+
