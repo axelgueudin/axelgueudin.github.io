@@ -16,7 +16,7 @@
 body {
   color: blue;
   font-family: 'Aktiv Grotesk Bold', sans-serif;
-  /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
+  cursor: none !important;
 }
 
 ::selection {
@@ -24,6 +24,24 @@ body {
 }
 ::-moz-selection {
   background: blue; /* Gecko Browsers */
+}
+
+.cursor-dot {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: blue;
 }
 
 /* img[alt=""], img:not([alt]) {
