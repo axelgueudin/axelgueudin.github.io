@@ -36,9 +36,7 @@ body {
     transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
+    z-index: 9999;
     width: 8px;
     height: 8px;
     background-color: blue;

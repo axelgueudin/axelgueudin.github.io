@@ -3,6 +3,16 @@ var app = new Vue({
   data: {
     projects: [
       {
+        title: "Publipress - Graphic Designer Intern",
+        description: "Branding / Illustration",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/publipress/comingsoon.jpg',
+            alt: 'Soon'
+          }
+        ]
+      },
+      {
         title: "Digiworks - Graphic Designer Intern",
         description: "Game assets / Game Interface / Illustration",
         currentNumber: 0,
