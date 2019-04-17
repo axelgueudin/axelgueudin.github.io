@@ -6,7 +6,7 @@ var cursor = {
     endY: (window.innerHeight / 2),
     cursorVisible: true,
     cursorEnlarged: false,
-    $dot: document.querySelector('.cursor-dot'),
+    $dot: document.querySelector('.cursor'),
 
     init: function() {
         // Set up element sizes

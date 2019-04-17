@@ -1,57 +1,58 @@
 @font-face {
-    font-family: Aktiv Grotesk Bold ;
-    src: url(../fonts/Aktiv_Grotesk_W01_Bold.ttf);
+  font-family: Aktiv Grotesk Bold;
+  src: url(../fonts/Aktiv_Grotesk_W01_Bold.ttf);
 }
 
 @font-face {
-    font-family: Aktiv Grotesk Regular ;
-    src: url(../fonts/Aktiv_Grotesk_W06_Regular.ttf);
+  font-family: Aktiv Grotesk Regular;
+  src: url(../fonts/Aktiv_Grotesk_W06_Regular.ttf);
 }
 
 @font-face {
-    font-family: Aktiv Grotesk Italic ;
-    src: url(../fonts/Aktiv_Grotesk_W06_Italic.ttf);
+  font-family: Aktiv Grotesk Italic;
+  src: url(../fonts/Aktiv_Grotesk_W06_Italic.ttf);
+}
+
+* {
+  cursor: none;
 }
 
 body {
   color: blue;
   font-family: 'Aktiv Grotesk Bold', sans-serif;
-  cursor: none !important;
 }
 
 ::selection {
-  background: blue; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: blue; /* Gecko Browsers */
+  background: blue;
+  /* WebKit/Blink Browsers */
 }
 
-.cursor-dot {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-                transform 0.3s ease-in-out;
-    z-index: 9999;
-    width: 8px;
-    height: 8px;
-    background-color: blue;
+::-moz-selection {
+  background: blue;
+  /* Gecko Browsers */
+}
+
+.cursor {
+  position: absolute;
+  border-radius: 50%;
+  transition: opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
 }
 
 /* img[alt=""], img:not([alt]) {
   filter: grayscale(100%);
 } */
-
-.internship{
+.internship {
   font-size: 1.1rem;
 }
 
 /* loader */
-
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -82,7 +83,6 @@ body {
 }
 
 /* Loaded */
-
 .loaded #loader {
   opacity: 0;
   -webkit-transition: all 0.2s ease-out;
@@ -102,7 +102,6 @@ body {
 }
 
 /* JavaScript Turned Off */
-
 .no-js #loader-wrapper {
   display: none;
 }
@@ -111,8 +110,25 @@ body {
   color: #000;
 }
 
-/* changement responsive */
+/* reveal effect
+.in-view {
+    animation: animate-in-view .6s ease-out forwards;
+}
 
+@keyframes animate-in-view {
+    0% {
+        transform: translate(0, 20px) scale(1);
+        opacity: 0;
+    }
+    35% {
+        transform: translate(0, 20px) scale(1);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+/* changement responsive */
 @media (max-width: 600px) {
   .work-toggle-container {
     border-bottom: solid 1px blue;
@@ -148,7 +164,6 @@ body {
 .site_header {}
 
 /* Effet underline link */
-
 a:before {
   content: '';
   position: absolute;
@@ -177,8 +192,11 @@ a:hover:after {
   width: 100%;
 }
 
-/* ajustement div images */
+.informations {
+  font-size: 1rem;
+}
 
+/* ajustement div images */
 .project {
   max-width: 100%;
 }
@@ -195,7 +213,6 @@ img {
 }
 
 /* text img  */
-
 .counter {
   float: right;
   clear: both;
@@ -206,7 +223,6 @@ img {
 }
 
 /* link toggle */
-
 .work-toggle a {
   transition: all 100ms ease-in-out;
 }
@@ -281,7 +297,6 @@ p {
 }
 
 /* effet blur */
-
 a:active, .work-toggle:active, .about-toggle:active {
   transform: scale(.95);
   filter: blur(2px);
@@ -296,13 +311,11 @@ a {
 /* #image {
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 } */
-
 .slider:hover {
   cursor: pointer;
 }
 
 /* Effet glitched hover framework */
-
 .glitched:hover {
   -webkit-animation: glitch1 2.5s infinite;
   animation: glitch1 2.5s infinite;
@@ -319,61 +332,73 @@ span.glitched:hover {
     transform: none;
     opacity: 1;
   }
+
   7% {
     -webkit-transform: skew(-0.5deg, -0.9deg);
     transform: skew(-0.5deg, -0.9deg);
     opacity: 0.75;
   }
+
   10% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   27% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   30% {
     -webkit-transform: skew(0.8deg, -0.1deg);
     transform: skew(0.8deg, -0.1deg);
     opacity: 0.75;
   }
+
   35% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   52% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   55% {
     -webkit-transform: skew(-1deg, 0.2deg);
     transform: skew(-1deg, 0.2deg);
     opacity: 0.75;
   }
+
   50% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   72% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   75% {
     -webkit-transform: skew(0.4deg, 1deg);
     transform: skew(0.4deg, 1deg);
     opacity: 0.75;
   }
+
   80% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   100% {
     -webkit-transform: none;
     transform: none;
@@ -387,61 +412,73 @@ span.glitched:hover {
     transform: none;
     opacity: 1;
   }
+
   7% {
     -webkit-transform: skew(-0.5deg, -0.9deg);
     transform: skew(-0.5deg, -0.9deg);
     opacity: 0.75;
   }
+
   10% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   27% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   30% {
     -webkit-transform: skew(0.8deg, -0.1deg);
     transform: skew(0.8deg, -0.1deg);
     opacity: 0.75;
   }
+
   35% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   52% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   55% {
     -webkit-transform: skew(-1deg, 0.2deg);
     transform: skew(-1deg, 0.2deg);
     opacity: 0.75;
   }
+
   50% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   72% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   75% {
     -webkit-transform: skew(0.4deg, 1deg);
     transform: skew(0.4deg, 1deg);
     opacity: 0.75;
   }
+
   80% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
   }
+
   100% {
     -webkit-transform: none;
     transform: none;

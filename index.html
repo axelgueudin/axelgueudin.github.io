@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-  <title>AXEL GUEUDIN | Graphiste & UI Designer | Rouen</title>
+  <title>AXEL GUEUDIN | Graphiste & UI Designer</title>
   <meta name="description" content="Axel Gueudin, graphiste et UX/UI designer étudiant (et bientôt freelance !) à Rouen prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI" />
   <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence, 76000 " />
   <meta name="google-site-verification" content="7sPAY6xEp14NH13drtpLIrltJqAHxKzQBgJiCe0T1Qw" />
@@ -19,14 +19,27 @@
   <link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-  <meta property="og:title" content="AXEL GUEUDIN | Graphiste & UI Designer | Rouen">
+  <meta property="og:title" content="AXEL GUEUDIN | Graphiste & UI Designer">
   <meta property="og:locale" content="fr_FR">
   <link rel="canonical" href="https://gueudaxe.github.io/portfolio/">
   <meta property="og:url" content="https://gueudaxe.github.io/portfolio/">
-  <meta property="og:site_name" content="AXEL GUEUDIN | Graphiste & UI Designer | Rouen">
+  <meta property="og:site_name" content="AXEL GUEUDIN | Graphiste & UI Designer">
   <meta property="og:description" content="Axel Gueudin, graphiste et UX/UI designer étudiant (et bientôt freelance !) à Rouen prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@lXlON">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115548466-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115548466-1');
+  </script>
 </head>
 
 <body class="">
@@ -34,22 +47,22 @@
     <div id="loader-wrapper" class="row">
       <div id="loader" class="col s12 m12 l12">
         <h1 class="text-center baffle-longer fittext-h1 flow-text guard-text allcaps">
-			axel gueudin
-			</h1>
+          axel gueudin
+        </h1>
       </div>
 
       <div class="loader-section"></div>
 
     </div>
-    <section id="home" class="row">
+    <div id="home" class="row">
       <div class="work-toggle-container col s12 m6 l6">
         <a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
       </div>
       <div class="about-toggle-container col s12 m6 l6">
         <a class="about-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#about">about</a>
       </div>
-    </section>
-    <section id="portfolio" class="row">
+    </div>
+    <div id="portfolio" class="row">
       <div class="work-close col s12 m2 l2">
         <div class="fixed-cross">
           <a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
@@ -66,6 +79,7 @@
                 <p class="project-title flow-text">{{project.title}}</p>
                 <span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
                 <p class="details flow-text" v-html="project.description"></p>
+                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
               </div>
             </div>
             <div id="prototype" class="col s12 m12 l12">
@@ -77,8 +91,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="info">
+    </div>
+    <div id="info">
       <div class="about-container row">
         <div class="about-close col s12 m2 l2">
           <div class="fixed-cross">
@@ -88,10 +102,10 @@
         <div class="text-container col s12 m10 l10">
           <div class="row">
             <div class="col s12 m6 l6">
-              <h1 class="fittext-h1">
-									Hi, I'm Axel Gueudin.
-							</h1>
-              <p class="flow-text">
+              <h1 class="fittext-h1 reveal">
+                Hi, I'm Axel !
+              </h1>
+              <p class="flow-text reveal">
                 Rouen - Valenciennes.
               </p>
               <p class="flow-text">
@@ -103,7 +117,7 @@
               <p class="flow-text">
                 <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">Twitter</a>
                 /
-                 <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
+                <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
                 /
                 <a href="https://github.com/gueudaxe/" target="_blank" rel="noreferrer, noopener">Github</a>
                 /
@@ -113,10 +127,10 @@
               <h1 class="fittext-h1">Experience</h1>
               <h2 class="internship">Internship</h2>
               <p class="flow-text">
-              <a href="https://www.publipress.fr/" target="_blank" rel="noreferrer, noopener">Publipress</a> - January &rarr; April 2019
-              <br/> <a href="https://www.digiworks.fr/" target="_blank" rel="noreferrer, noopener">Digiworks</a> - April &rarr; July 2018
-              <br/> <a href="https://www.devoteam.com/" target="_blank" rel="noreferrer, noopener">Devoteam</a> - February &rarr; June 2017
-              <br/> <a href="http://espe.univ-rouen.fr/" target="_blank" rel="noreferrer, noopener">ESPE Rouen</a> - April &rarr; June 2016
+                <a href="https://www.publipress.fr/" target="_blank" rel="noreferrer, noopener">Publipress</a> - January &rarr; April 2019
+                <br /> <a href="https://www.digiworks.fr/" target="_blank" rel="noreferrer, noopener">Digiworks</a> - April &rarr; July 2018
+                <br /> <a href="https://www.devoteam.com/" target="_blank" rel="noreferrer, noopener">Devoteam</a> - February &rarr; June 2017
+                <br /> <a href="http://espe.univ-rouen.fr/" target="_blank" rel="noreferrer, noopener">ESPE Rouen</a> - April &rarr; June 2016
               </p>
             </div>
             <div class="col s12 m6 l6">
@@ -137,9 +151,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
-  <div class="cursor-dot"></div>
+  <div class="cursor"></div>
   <!--  Scripts-->
   <!-- VUE JS TEST -->
   <script src="js/vue.min.js"></script>
@@ -148,6 +162,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/brutalist.js"></script>
   <script src="js/start.brutalizing.js"></script>
+  <script src="js/funtab.js"></script>
   <script>
     $(document).ready(function() {
       setTimeout(function() {
@@ -181,23 +196,38 @@
         $('.about-toggle-container').show();
         $('#info').hide();
       });
-
     });
+
+    /*    //Animate load
+        function callback(entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+            } else {
+              entry.target.classList.remove('in-view');
+            }
+          });
+        }
+
+        function initObserver() {
+          var observer = new IntersectionObserver(callback);
+          var items = document.querySelectorAll('.project');
+          for(var i in items) {
+            if(!items.hasOwnProperty(i)) {
+              continue;
+            }
+
+            observer.observe(items[i]);
+          }
+        }
+
+        if (window.IntersectionObserver) {
+          initObserver();
+        } else {
+          console.log("IntersectionObserver not supported.");
+        }
+    */
   </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115548466-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-115548466-1');
-  </script>
-
 
   <!-- TRACKING
 <script>
