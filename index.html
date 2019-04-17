@@ -42,7 +42,7 @@
   </script>
 </head>
 
-<body class="">
+<body class="" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
   <div id="app" class="container-fluid">
     <div id="loader-wrapper" class="row">
       <div id="loader" class="col s12 m12 l12">
@@ -54,6 +54,7 @@
       <div class="loader-section"></div>
 
     </div>
+    <p class="copyright">&copy; Axel GUEUDIN 2019</p>
     <div id="home" class="row">
       <div class="work-toggle-container col s12 m6 l6">
         <a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
@@ -76,17 +77,11 @@
                 <img class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt" />
               </div>
               <div class="description">
-                <p class="project-title flow-text">{{project.title}}</p>
+                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
                 <span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
                 <p class="details flow-text" v-html="project.description"></p>
-                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
+                <p class="project-title flow-text">{{project.title}}</p>
               </div>
-            </div>
-            <div id="prototype" class="col s12 m12 l12">
-              <iframe class="responsive" width="100%" height="900" src="assets\media\manganime_prototype\index.html" frameborder="0"></iframe>
-              <p class="description flow-text">
-                MANGANIME <br /> Mobile app prototype - student project - made with <a href="https://bance-sarah.github.io/portfolio/" target="_blank" rel="noreferrer, noopener">Sarah Bance</a>.
-              </p>
             </div>
           </div>
         </div>
