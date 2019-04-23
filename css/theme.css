@@ -138,6 +138,10 @@ body {
 } */
 /* changement responsive */
 @media (max-width: 600px) {
+  * {
+    cursor: default;
+  }
+
   .work-toggle-container {
     border-bottom: solid 1px blue;
     border-right: none !important;
@@ -165,6 +169,12 @@ body {
   }
 
   #prototype {
+    display: none;
+  }
+  .cursor {
+    display: none;
+  }
+  .copyright{
     display: none;
   }
 }
