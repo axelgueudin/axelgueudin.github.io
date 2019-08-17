@@ -22,15 +22,25 @@ body {
   font-family: 'Aktiv Grotesk Bold', sans-serif;
 }
 
-::selection {
-  background: blue;
-  /* WebKit/Blink Browsers */
+/* Darkmode */
+.darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body {
+  color: yellow;
+}
+.darkmode--activated .cursor {
+  background-color: yellow;
+}
+.darkmode--activated a:before {
+  border-bottom: 3px solid yellow;
 }
 
-::-moz-selection {
-  background: blue;
-  /* Gecko Browsers */
+.darkmode--activated a:hover{
+  color:blue;
 }
+
+.darkmode--activated a:after {
+  border-bottom: 3px solid blue;
+}
+
 
 .cursor {
   position: absolute;

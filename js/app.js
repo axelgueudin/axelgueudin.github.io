@@ -1,7 +1,8 @@
 var app = new Vue({
   el: '#app',
   data: {
-    projects: [{
+    projects: [
+      {
         title: "Publipress - Graphic Designer Intern",
         description: "Branding / Illustration",
         currentNumber: 0,
@@ -63,6 +64,63 @@ var app = new Vue({
         ]
       },
       {
+        title: "Musée de la Chasse & de la Nature - Rebrand Idea",
+        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        currentNumber: 0,
+        images: [
+          {
+            src: 'assets/images/mcn/logo.jpg',
+            info: 'Logo Musée de la Chasse & de la Nature',
+            alt: 'Logo - MCN'
+          },
+          {
+            src: 'assets/images/mcn/affiche_bus.jpg',
+            info: 'Mockup Affiche Arrêt de bus',
+            alt: 'Mockup Affiche Arrêt de bus'
+          },
+          {
+            src: 'assets/images/mcn/affiche_metro.jpg',
+            info: 'Mockup Affiche Métro',
+            alt: 'Mockup Affiche Métro'
+          },
+          {
+            src: 'assets/images/mcn/affiche_vitrine.jpg',
+            info: 'Mockup Affiche vitrine',
+            alt: 'Mockup Affiche vitrine'
+          },
+          {
+            src: 'assets/images/mcn/affiche_wall.jpg',
+            info: 'Mockup Affiches mur',
+            alt: 'Mockup Affiches mur'
+          },
+          {
+            src: 'assets/images/mcn/affiche_wallB.jpg',
+            info: 'Mockup Affiche mur',
+            alt: 'Mockup Affiche mur'
+          },
+          {
+            src: 'assets/images/mcn/banner.jpg',
+            info: 'Mockup Drapeaux',
+            alt: 'Mockup Drapeaux'
+          },
+          {
+            src: 'assets/images/mcn/cards.jpg',
+            info: 'Mockup Carte de visite',
+            alt: 'Mockup Carte de visite'
+          },
+          {
+            src: 'assets/images/mcn/tasse.jpg',
+            info: 'Mockup Tasse à café',
+            alt: 'Mockup Mug'
+          },
+          {
+            src: 'assets/images/mcn/tote.jpg',
+            info: 'Mockup Tote bag',
+            alt: 'Mockup Tote bag'
+          }
+        ]
+      },
+      {
         title: "Digiworks - Graphic Designer Intern",
         description: "Game assets / Game Interface / Illustration",
         currentNumber: 0,
@@ -114,6 +172,37 @@ var app = new Vue({
         ]
       },
       {
+        title: "BFM TV Rebrand Idea",
+        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/bfm/logo.jpg',
+            info: 'Logo BFMTV',
+            alt: 'Logo principal BFMTV'
+          },
+          {
+            src: 'assets/images/bfm/logos.jpg',
+            info: 'Déclinaisons logo BFMTV',
+            alt: 'Déclinaisons logo BFMTV'
+          },
+          {
+            src: 'assets/images/bfm/cards.jpg',
+            info: 'Mockup cartes visites BFMTV',
+            alt: 'Mockup cartes visites BFMTV'
+          },
+          {
+            src: 'assets/images/bfm/wall_1.jpg',
+            info: 'Mockup locaux BFMTV',
+            alt: 'Mockup locaux BFMTV'
+          },
+          {
+            src: 'assets/images/bfm/wall_2.jpg',
+            info: 'Mockup locaux ascenseur BFMTV',
+            alt: 'Mockup locaux ascenseur BFMTV'
+          }
+        ]
+      },
+      {
         title: "Devoteam - Graphic Designer Intern",
         description: "Illustration / Logo / Pattern",
         currentNumber: 0,
@@ -161,37 +250,6 @@ var app = new Vue({
             src: 'assets/images/devoteam/lines.png',
             info: 'Pattern - Lines',
             alt: 'Pattern flat design - Lines'
-          }
-        ]
-      },
-      {
-        title: "BFM TV Rebrand",
-        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/bfm/logo.jpg',
-            info: 'Logo BFMTV',
-            alt: 'Logo principal BFMTV rebrand'
-          },
-          {
-            src: 'assets/images/bfm/logos.jpg',
-            info: 'Déclinaisons logo BFMTV',
-            alt: 'Déclinaisons logo BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/cards.jpg',
-            info: 'Mockup cartes visites BFMTV',
-            alt: 'Mockup cartes visites BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/wall_1.jpg',
-            info: 'Mockup locaux BFMTV',
-            alt: 'Mockup locaux BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/wall_2.jpg',
-            info: 'Mockup locaux ascenseur BFMTV',
-            alt: 'Mockup locaux ascenseur BFMTV'
           }
         ]
       },
@@ -266,7 +324,7 @@ var app = new Vue({
             alt: 'Fake pub Nike'
           }
         ]
-      },
+      }
     ]
   },
   methods: {
