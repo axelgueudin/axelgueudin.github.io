@@ -78,7 +78,7 @@
               </div>
               <div class="description">
                 <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
-                <span class="counter" v-if="project.images.length>1"><span style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
+                <span class="counter" v-if="project.images.length>1"><span class="number" style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
                 <p class="details flow-text" v-html="project.description"></p>
                 <p class="project-title flow-text" v-html="project.title"></p>
               </div>
@@ -161,19 +161,38 @@
   <script src="js/funtab.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
   <script>
-      var options = {
-      bottom: '64px', // default: '32px'
-      right: 'unset', // default: '32px'
-      left: '32px', // default: 'unset'
-      time: '0.5s', // default: '0.3s'
-      mixColor: '#fff', // default: '#fff'
-      backgroundColor: '#fff',  // default: '#fff'
-      buttonColorDark: '#100f2c',  // default: '#100f2c'
-      buttonColorLight: '#fff', // default: '#fff'
-      saveInCookies: false, // default: true,
-      label: '🌓', // default: ''
-      autoMatchOsTheme: true, // default: true
-    }
+      const mq = window.matchMedia( "(max-width: 600px)" );
+      if (mq.matches) {
+        // options pour mobile
+            var options = {
+            bottom: '92%', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true, // default: true
+            }
+      } else {
+        // options normal
+          var options = {
+          bottom: '64px', // default: '32px'
+          right: 'unset', // default: '32px'
+          left: '32px', // default: 'unset'
+          time: '0.5s', // default: '0.3s'
+          mixColor: '#fff', // default: '#fff'
+          backgroundColor: '#fff',  // default: '#fff'
+          buttonColorDark: '#100f2c',  // default: '#100f2c'
+          buttonColorLight: '#fff', // default: '#fff'
+          saveInCookies: false, // default: true,
+          label: '🌓', // default: ''
+          autoMatchOsTheme: true, // default: true
+        }
+      }
     const darkmode = new Darkmode(options);
     darkmode.showWidget();
   </script>

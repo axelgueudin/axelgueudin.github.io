@@ -13,17 +13,40 @@
   src: url(../fonts/Aktiv_Grotesk_W06_Italic.ttf);
 }
 
+@font-face {
+  font-family: SpaceMono Bold;
+  src: url(../fonts/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono Bold Italic;
+  src: url(../fonts/SpaceMono-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono Regular;
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono Italic;
+  src: url(../fonts/SpaceMono-Italic.ttf);
+}
+
 * {
   cursor: none;
 }
 
 body {
   color: blue;
-  font-family: 'Aktiv Grotesk Bold', sans-serif;
+  font-family: 'SpaceMono Bold', sans-serif;
 }
 
 /* Darkmode */
-.darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body {
+.darkmode-toggle {
+  z-index: 500;
+}
+.darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body, .darkmode--activated .number {
   color: yellow;
 }
 .dark--activated span {
@@ -149,6 +172,7 @@ body {
         opacity: 1;
     }
 } */
+
 /* changement responsive */
 @media (max-width: 600px) {
   * {
@@ -181,9 +205,6 @@ body {
     top: 0;
   }
 
-  #prototype {
-    display: none;
-  }
   .cursor {
     display: none;
   }
@@ -225,6 +246,7 @@ a:hover:after {
 
 .informations {
   font-size: 1rem;
+  font-family: 'SpaceMono Italic', sans-serif;
 }
 
 /* ajustement div images */
