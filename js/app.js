@@ -3,6 +3,112 @@ var app = new Vue({
   data: {
     projects: [
       {
+        title: "<a href='/biotica'>Biotica</a> - Hybrid game about biodiversity ",
+        description: "[WIP] - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/biotica/visuel.jpg',
+            info: 'Visuel de présentation du jeu avec logo',
+            alt: 'Visuel / logo'
+          },
+          {
+            src: 'assets/images/biotica/croquis/zone.jpg',
+            info: 'Croquis d\'une tuile',
+            alt: 'Croquis tuile '
+          },
+          {
+            src: 'assets/images/biotica/croquis/carte.jpg',
+            info: 'Croquis d\'une carte',
+            alt: 'Croquis carte'
+          },
+          {
+            src: 'assets/images/biotica/personas.jpg',
+            info: 'Personas',
+            alt: 'Personas'
+          },
+          {
+            src: 'assets/images/biotica/scenario_usage/elise.jpg',
+            info: 'User journey persona Elise',
+            alt: 'User journey persona Elise'
+          },
+          {
+            src: 'assets/images/biotica/scenario_usage/ecran.jpg',
+            info: 'Wireframe de l\'application',
+            alt: 'Wireframe app'
+          },
+          {
+            src: 'assets/images/biotica/protopa/full.jpg',
+            info: 'Prototype v1',
+            alt: 'Prototype v1'
+          },
+          {
+            src: 'assets/images/biotica/protopa/menu.jpg',
+            info: 'Prototype papier de l\'application',
+            alt: 'Prototype papier app'
+          },
+          {
+            src: 'assets/images/biotica/protopa/interaction.jpg',
+            info: 'Prototype papier de l\'application',
+            alt: 'Prototype papier app'
+          },
+          {
+            src: 'assets/images/biotica/cartes/characters.jpg',
+            info: 'Cartes personnages',
+            alt: 'Cartes personnages'
+          },
+          {
+            src: 'assets/images/biotica/cartes/ressources.jpg',
+            info: 'Cartes ressources / actions de la ville / espèce invasive',
+            alt: 'Cartes ressources / actions de la ville / espèce invasive'
+          },
+          {
+            src: 'assets/images/biotica/photos/full.jpg',
+            info: '',
+            alt: 'Jeu hybride'
+          },
+          {
+            src: 'assets/images/biotica/photos/fullGame.jpg',
+            info: '',
+            alt: 'Jeu en cours'
+          },
+          {
+            src: 'assets/images/biotica/photos/closeUp.jpg',
+            info: '',
+            alt: 'Zoom sur le jeu'
+          },
+          {
+            src: 'assets/images/biotica/photos/arbres.jpg',
+            info: 'Cartes ressources / Espèce invasive',
+            alt: 'Cartes'
+          },
+          {
+            src: 'assets/images/biotica/photos/main.jpg',
+            info: '',
+            alt: 'Cartes en main'
+          },
+          {
+            src: 'assets/images/biotica/photos/interaction.jpg',
+            info: 'Interaction avec le prototype interactif sous Adobe xd',
+            alt: 'Interaction prototype'
+          },
+          {
+            src: 'assets/images/biotica/photos/ra1.jpg',
+            info: 'Simulation de la réalité augmenté avec un application android',
+            alt: 'Simulation AR'
+          },
+          {
+            src: 'assets/images/biotica/photos/ra2.jpg',
+            info: 'Simulation de la réalité augmenté avec un application android',
+            alt: 'Simulation AR'
+          },
+          {
+            src: 'assets/images/biotica/xd.jpg',
+            info: '<a href="https://xd.adobe.com/view/2cf9b88f-6f3a-4189-524f-524bb835325c-5ac8/" target="_blank" rel="noreferrer, noopener">Manipuler le prototype interactif</a>',
+            alt: 'Lien prototype'
+          },
+        ]
+      },
+      {
         title: "Publipress - Graphic Designer Intern",
         description: "Branding / Illustration",
         currentNumber: 0,
@@ -74,6 +180,11 @@ var app = new Vue({
             alt: 'Logo - MCN'
           },
           {
+            src: 'assets/images/mcn/cards.jpg',
+            info: 'Mockup Carte de visite',
+            alt: 'Mockup Carte de visite'
+          },
+          {
             src: 'assets/images/mcn/affiche_bus.jpg',
             info: 'Mockup Affiche Arrêt de bus',
             alt: 'Mockup Affiche Arrêt de bus'
@@ -102,11 +213,6 @@ var app = new Vue({
             src: 'assets/images/mcn/banner.jpg',
             info: 'Mockup Drapeaux',
             alt: 'Mockup Drapeaux'
-          },
-          {
-            src: 'assets/images/mcn/cards.jpg',
-            info: 'Mockup Carte de visite',
-            alt: 'Mockup Carte de visite'
           },
           {
             src: 'assets/images/mcn/tasse.jpg',
@@ -168,6 +274,17 @@ var app = new Vue({
             src: 'assets/images/digiworks/illu_2.jpg',
             info: 'Illustrations Concertation & Smartphone',
             alt: '2 Illustrations isométrie - Concertation & Smartphone '
+          }
+        ]
+      },
+      {
+        title: "<a href='https://resonancem1.wordpress.com/' target='_blank' rel='noreferrer, noopener'>Resonance</a>",
+        description: "Student project",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/resonance/visuel.jpg',
+            info: 'Logo Resonance',
+            alt: 'Logo Resonance'
           }
         ]
       },
@@ -254,73 +371,28 @@ var app = new Vue({
         ]
       },
       {
-        title: "Prisme Brand",
-        description: "Student project - Made with <a href='https://www.behance.net/Mrntrmz' target='_blank' rel='noreferrer, noopener'>Marine Termoz</a>",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/prisme/logo.jpg',
-            info: 'Logo Prisme',
-            alt: 'Logo principal Prisme branding'
-          },
-          {
-            src: 'assets/images/prisme/logo_multi.jpg',
-            info: 'Déclinaisons logo Prisme',
-            alt: 'Déclinaison logo Prisme'
-          },
-          {
-            src: 'assets/images/prisme/carte.jpg',
-            info: 'Mockup cartes visite',
-            alt: 'Mockup cartes visites Prisme'
-          },
-          {
-            src: 'assets/images/prisme/presentation.jpg',
-            info: 'Mockup Metal Vanish Prisme',
-            alt: 'Mockup impression métallisée Prisme'
-          },
-          {
-            src: 'assets/images/prisme/vinyle.jpg',
-            info: 'Mockup Vinyle Logo',
-            alt: 'Mockup Vinyle Logo'
-          }
-        ]
-      },
-      {
         title: "Personal creations",
-        description: "",
+        description: "Find more on <a href='https://dribbble.com/lXlON' target='_blank' rel='noreferrer, noopener'>Dribbble</a>",
         currentNumber: 0,
-        images: [{
+        images: [
+          {
             src: 'assets/images/random/atlas_m.jpg',
-            info: '',
+            info: 'Photomanipulation Altas portant la Terre',
             alt: 'Photomanipulation Altas portant la Terre'
           },
           {
-            src: 'assets/images/random/holoback.jpg',
-            info: '',
-            alt: 'Affiche Holoback'
-          },
-          {
             src: 'assets/images/random/les_pluriels.jpg',
-            info: '',
+            info: 'Affiche Festival Les Pluriels 20e Edition',
             alt: 'Affiche Festival Les Pluriels 20e Edition'
           },
           {
-            src: 'assets/images/random/multimedia_manifesto_m.jpg',
-            info: '',
-            alt: 'Affiche DUT MMI'
-          },
-          {
-            src: 'assets/images/random/psyche.png',
-            info: '',
-            alt: 'Photomanipulation psychédélique'
-          },
-          {
             src: 'assets/images/random/pub.jpg',
-            info: '',
+            info: 'Fake Pub LG TV',
             alt: 'Pub LG TV'
           },
           {
             src: 'assets/images/random/spoof_ad.jpg',
-            info: '',
+            info: 'Fake pub Nike',
             alt: 'Fake pub Nike'
           }
         ]
@@ -339,5 +411,5 @@ var app = new Vue({
 });
 
 /* THANKS TO MATHIAS HOEG WEBSITE, FOR THE WORKING SLIDER :)
-AJAX + JSON was my fist try but it's bad
-Used Matthias Hager tutorial for the slider, but had no idea how to loop to make more than 1 slider */
+tried AJAX + JSON // didnt work well
+Matthias Hager slider tutorial, but had no idea how to loop well the slider*/

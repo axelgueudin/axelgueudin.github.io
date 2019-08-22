@@ -26,6 +26,9 @@ body {
 .darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body {
   color: yellow;
 }
+.dark--activated span {
+  color: yellow;
+}
 .darkmode--activated .cursor {
   background-color: yellow;
 }
@@ -40,7 +43,6 @@ body {
 .darkmode--activated a:after {
   border-bottom: 3px solid blue;
 }
-
 
 .cursor {
   position: absolute;
@@ -58,6 +60,7 @@ body {
 /* img[alt=""], img:not([alt]) {
   filter: grayscale(100%);
 } */
+
 .internship {
   font-size: 1.1rem;
 }
@@ -248,6 +251,10 @@ img {
 
 .description {
   margin: 10px;
+}
+
+.details{
+  font-size: 1.4em;
 }
 
 /* link toggle */
