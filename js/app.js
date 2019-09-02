@@ -3,6 +3,72 @@ var app = new Vue({
   data: {
     projects: [
       {
+        title: "Master DGDI Identity",
+        description: "Personal project - Made for fun",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/dgdi/logo.jpg',
+            info: 'Logo DGDI',
+            alt: 'Logo DGDI'
+          },
+          {
+            src: 'assets/images/dgdi/logos.jpg',
+            info: 'Déclinaisons logo DGDI',
+            alt: 'Déclinaisons logo DGDI'
+          },
+          {
+            src: 'assets/images/dgdi/full.jpg',
+            info: 'Mockup Elements identité visuelle',
+            alt: 'Mockup Elements identité visuelle'
+          },
+          {
+            src: 'assets/images/dgdi/cartes.jpg',
+            info: 'Mockup Cartes de Visite',
+            alt: 'Mockup Cartes de Visite'
+          },
+          {
+            src: 'assets/images/dgdi/card_etu.jpg',
+            info: 'Mockup Cartes étudiante DGDI',
+            alt: 'Mockup Cartes étudiante DGDI'
+          },
+          {
+            src: 'assets/images/dgdi/hoodie.jpg',
+            info: 'Mockup Hoodie',
+            alt: 'Mockup Hoodie'
+          },
+          {
+            src: 'assets/images/dgdi/bracelet.jpg',
+            info: 'Mockup Bracelet RFID remplaçant la carte étudiante',
+            alt: 'Mockup Bracelet RFID remplaçant la carte étudiante'
+          },
+          {
+            src: 'assets/images/dgdi/flag.jpg',
+            info: 'Mockup Flag',
+            alt: 'Mockup Flag'
+          },
+          {
+            src: 'assets/images/dgdi/bus.jpg',
+            info: 'Mockup Affiche Portes Ouvertes',
+            alt: 'Mockup Affiche Portes Ouvertes'
+          },
+          {
+            src: 'assets/images/dgdi/seri.jpg',
+            info: '-',
+            alt: 'Serigraphy picture with gradient + Logo'
+          },
+          {
+            src: 'assets/images/dgdi/proto.jpg',
+            info: '-',
+            alt: 'Prototype picture with gradient + Logo'
+          },
+          {
+            src: 'assets/images/dgdi/tri.jpg',
+            info: '-',
+            alt: 'UX Workshop with gradient + Logo'
+          }
+        ]
+      },
+      {
         title: "<a href='/biotica'>Biotica</a> - Hybrid game about biodiversity ",
         description: "[WIP] - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
