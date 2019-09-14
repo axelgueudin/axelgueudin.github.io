@@ -18,38 +18,38 @@ var app = new Vue({
           },
           {
             src: 'assets/images/dgdi/full.jpg',
-            info: 'Mockup Elements identité visuelle',
-            alt: 'Mockup Elements identité visuelle'
+            info: 'Elements identité visuelle',
+            alt: 'Elements identité visuelle'
           },
           {
             src: 'assets/images/dgdi/cartes.jpg',
-            info: 'Mockup Cartes de Visite',
-            alt: 'Mockup Cartes de Visite'
+            info: 'Cartes de Visite',
+            alt: 'Cartes de Visite'
           },
           {
             src: 'assets/images/dgdi/card_etu.jpg',
-            info: 'Mockup Cartes étudiante DGDI',
-            alt: 'Mockup Cartes étudiante DGDI'
+            info: 'Cartes étudiante DGDI',
+            alt: 'Cartes étudiante DGDI'
           },
           {
             src: 'assets/images/dgdi/hoodie.jpg',
-            info: 'Mockup Hoodie',
-            alt: 'Mockup Hoodie'
+            info: 'Hoodie',
+            alt: 'Hoodie'
           },
           {
             src: 'assets/images/dgdi/bracelet.jpg',
-            info: 'Mockup Bracelet RFID remplaçant la carte étudiante',
-            alt: 'Mockup Bracelet RFID remplaçant la carte étudiante'
+            info: 'Bracelet RFID remplaçant la carte étudiante',
+            alt: 'Bracelet RFID remplaçant la carte étudiante'
           },
           {
             src: 'assets/images/dgdi/flag.jpg',
-            info: 'Mockup Flag',
-            alt: 'Mockup Flag'
+            info: 'Flag',
+            alt: 'Flag'
           },
           {
             src: 'assets/images/dgdi/bus.jpg',
-            info: 'Mockup Affiche Portes Ouvertes',
-            alt: 'Mockup Affiche Portes Ouvertes'
+            info: 'Affiche Portes Ouvertes',
+            alt: 'Affiche Portes Ouvertes'
           },
           {
             src: 'assets/images/dgdi/seri.jpg',
@@ -129,17 +129,17 @@ var app = new Vue({
           },
           {
             src: 'assets/images/biotica/photos/full.jpg',
-            info: '',
+            info: '-',
             alt: 'Jeu hybride'
           },
           {
             src: 'assets/images/biotica/photos/fullGame.jpg',
-            info: '',
+            info: '-',
             alt: 'Jeu en cours'
           },
           {
             src: 'assets/images/biotica/photos/closeUp.jpg',
-            info: '',
+            info: '-',
             alt: 'Zoom sur le jeu'
           },
           {
@@ -149,7 +149,7 @@ var app = new Vue({
           },
           {
             src: 'assets/images/biotica/photos/main.jpg',
-            info: '',
+            info: '-',
             alt: 'Cartes en main'
           },
           {
@@ -247,47 +247,47 @@ var app = new Vue({
           },
           {
             src: 'assets/images/mcn/cards.jpg',
-            info: 'Mockup Carte de visite',
+            info: 'Carte de visite',
             alt: 'Mockup Carte de visite'
           },
           {
             src: 'assets/images/mcn/affiche_bus.jpg',
-            info: 'Mockup Affiche Arrêt de bus',
+            info: 'Affiche Arrêt de bus',
             alt: 'Mockup Affiche Arrêt de bus'
           },
           {
             src: 'assets/images/mcn/affiche_metro.jpg',
-            info: 'Mockup Affiche Métro',
+            info: 'Affiche Métro',
             alt: 'Mockup Affiche Métro'
           },
           {
             src: 'assets/images/mcn/affiche_vitrine.jpg',
-            info: 'Mockup Affiche vitrine',
+            info: 'Affiche vitrine',
             alt: 'Mockup Affiche vitrine'
           },
           {
             src: 'assets/images/mcn/affiche_wall.jpg',
-            info: 'Mockup Affiches mur',
+            info: 'Affiches mur',
             alt: 'Mockup Affiches mur'
           },
           {
             src: 'assets/images/mcn/affiche_wallB.jpg',
-            info: 'Mockup Affiche mur',
+            info: 'Affiche mur',
             alt: 'Mockup Affiche mur'
           },
           {
             src: 'assets/images/mcn/banner.jpg',
-            info: 'Mockup Drapeaux',
+            info: 'Drapeaux',
             alt: 'Mockup Drapeaux'
           },
           {
             src: 'assets/images/mcn/tasse.jpg',
-            info: 'Mockup Tasse à café',
+            info: 'Tasse à café',
             alt: 'Mockup Mug'
           },
           {
             src: 'assets/images/mcn/tote.jpg',
-            info: 'Mockup Tote bag',
+            info: 'Tote bag',
             alt: 'Mockup Tote bag'
           }
         ]
@@ -370,17 +370,17 @@ var app = new Vue({
           },
           {
             src: 'assets/images/bfm/cards.jpg',
-            info: 'Mockup cartes visites BFMTV',
+            info: 'Cartes visites BFMTV',
             alt: 'Mockup cartes visites BFMTV'
           },
           {
             src: 'assets/images/bfm/wall_1.jpg',
-            info: 'Mockup locaux BFMTV',
+            info: 'Locaux BFMTV',
             alt: 'Mockup locaux BFMTV'
           },
           {
             src: 'assets/images/bfm/wall_2.jpg',
-            info: 'Mockup locaux ascenseur BFMTV',
+            info: 'Locaux ascenseur BFMTV',
             alt: 'Mockup locaux ascenseur BFMTV'
           }
         ]
