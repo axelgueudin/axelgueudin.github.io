@@ -3,68 +3,33 @@ var app = new Vue({
   data: {
     projects: [
       {
-        title: "Master DGDI Identity",
-        description: "Personal project - Made for fun",
+        title: "[WIP] FPS SCI-FI Loadout Menu",
+        description: "UI Design",
         currentNumber: 0,
         images: [{
-            src: 'assets/images/dgdi/logo.jpg',
-            info: 'Logo DGDI',
-            alt: 'Logo DGDI'
+            src: 'assets/images/ui_exo/loadout.jpg',
+            info: 'Loadout Menu',
+            alt: 'Loadout Menu'
           },
           {
-            src: 'assets/images/dgdi/logos.jpg',
-            info: 'Déclinaisons logo DGDI',
-            alt: 'Déclinaisons logo DGDI'
+            src: 'assets/images/ui_exo/loadout-inventory.jpg',
+            info: 'Loadout inventory Menu',
+            alt: 'Loadout inventory Menu'
           },
           {
-            src: 'assets/images/dgdi/full.jpg',
-            info: 'Elements identité visuelle',
-            alt: 'Elements identité visuelle'
+            src: 'assets/images/ui_exo/wireframe-loadout.jpg',
+            info: 'Wireframe Loadout Menu',
+            alt: 'Wireframe Loadout Menu'
           },
           {
-            src: 'assets/images/dgdi/cartes.jpg',
-            info: 'Cartes de Visite',
-            alt: 'Cartes de Visite'
+            src: 'assets/images/ui_exo/wireframe-inventory.jpg',
+            info: 'Wireframe Loadout Inventory Menu',
+            alt: 'Wireframe Loadout Inventory Menu'
           },
           {
-            src: 'assets/images/dgdi/card_etu.jpg',
-            info: 'Cartes étudiante DGDI',
-            alt: 'Cartes étudiante DGDI'
-          },
-          {
-            src: 'assets/images/dgdi/hoodie.jpg',
-            info: 'Hoodie',
-            alt: 'Hoodie'
-          },
-          {
-            src: 'assets/images/dgdi/bracelet.jpg',
-            info: 'Bracelet RFID remplaçant la carte étudiante',
-            alt: 'Bracelet RFID remplaçant la carte étudiante'
-          },
-          {
-            src: 'assets/images/dgdi/flag.jpg',
-            info: 'Flag',
-            alt: 'Flag'
-          },
-          {
-            src: 'assets/images/dgdi/bus.jpg',
-            info: 'Affiche Portes Ouvertes',
-            alt: 'Affiche Portes Ouvertes'
-          },
-          {
-            src: 'assets/images/dgdi/seri.jpg',
-            info: '-',
-            alt: 'Serigraphy picture with gradient + Logo'
-          },
-          {
-            src: 'assets/images/dgdi/proto.jpg',
-            info: '-',
-            alt: 'Prototype picture with gradient + Logo'
-          },
-          {
-            src: 'assets/images/dgdi/tri.jpg',
-            info: '-',
-            alt: 'UX Workshop with gradient + Logo'
+            src: 'assets/images/ui_exo/moodboard.jpg',
+            info: 'Moodboard',
+            alt: 'Moodboard'
           }
         ]
       },
@@ -175,63 +140,68 @@ var app = new Vue({
         ]
       },
       {
-        title: "Publipress - Graphic Designer Intern",
-        description: "Branding / Illustration",
+        title: "Master DGDI Identity",
+        description: "Personal project - Made for fun",
         currentNumber: 0,
         images: [{
-            src: 'assets/images/publipress/profelec.jpg',
-            info: 'Projet non abouti - Recherche graphique pour la refonte du logo d\'un client',
-            alt: 'Pistes graphique logo électricité générale'
+            src: 'assets/images/dgdi/logo.jpg',
+            info: 'Logo DGDI',
+            alt: 'Logo DGDI'
           },
           {
-            src: 'assets/images/publipress/107armada.jpg',
-            info: 'Proposition non retenue - Logo pour un événement organisé par le Hangar 107 durant l\'Armada 2019',
-            alt: 'Hangar & Voilier'
+            src: 'assets/images/dgdi/logos.jpg',
+            info: 'Déclinaisons logo DGDI',
+            alt: 'Déclinaisons logo DGDI'
           },
           {
-            src: 'assets/images/publipress/grdf1.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Chill'
+            src: 'assets/images/dgdi/full.jpg',
+            info: 'Elements identité visuelle',
+            alt: 'Elements identité visuelle'
           },
           {
-            src: 'assets/images/publipress/grdf2.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Bath'
+            src: 'assets/images/dgdi/cartes.jpg',
+            info: 'Cartes de Visite',
+            alt: 'Cartes de Visite'
           },
           {
-            src: 'assets/images/publipress/grdf3.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Cook'
+            src: 'assets/images/dgdi/card_etu.jpg',
+            info: 'Cartes étudiante DGDI',
+            alt: 'Cartes étudiante DGDI'
           },
           {
-            src: 'assets/images/publipress/grdf4.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Warm'
+            src: 'assets/images/dgdi/hoodie.jpg',
+            info: 'Hoodie',
+            alt: 'Hoodie'
           },
           {
-            src: 'assets/images/publipress/grdf5.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Pool'
+            src: 'assets/images/dgdi/bracelet.jpg',
+            info: 'Bracelet RFID remplaçant la carte étudiante',
+            alt: 'Bracelet RFID remplaçant la carte étudiante'
           },
           {
-            src: 'assets/images/publipress/grdf6.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - BBQ'
+            src: 'assets/images/dgdi/flag.jpg',
+            info: 'Flag',
+            alt: 'Flag'
           },
           {
-            src: 'assets/images/publipress/grdf7.png',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'Illustration - Piggy bank'
+            src: 'assets/images/dgdi/bus.jpg',
+            info: 'Affiche Portes Ouvertes',
+            alt: 'Affiche Portes Ouvertes'
           },
           {
-            src: 'assets/images/publipress/allgrdf.jpg',
-            info: 'Proposition d\'illustration pour GRDF - illustrant les avantages du gaz naturel',
-            alt: 'All illustrations'
+            src: 'assets/images/dgdi/seri.jpg',
+            info: '-',
+            alt: 'Serigraphy picture with gradient + Logo'
           },
           {
-            src: 'assets/images/publipress/6esens.jpg',
-            info: 'Carte des vins - 6e Sens',
-            alt: 'Mockup Carte vin'
+            src: 'assets/images/dgdi/proto.jpg',
+            info: '-',
+            alt: 'Prototype picture with gradient + Logo'
+          },
+          {
+            src: 'assets/images/dgdi/tri.jpg',
+            info: '-',
+            alt: 'UX Workshop with gradient + Logo'
           }
         ]
       },
@@ -239,8 +209,7 @@ var app = new Vue({
         title: "Musée de la Chasse & de la Nature - Rebrand Idea",
         description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
-        images: [
-          {
+        images: [{
             src: 'assets/images/mcn/logo.jpg',
             info: 'Logo Musée de la Chasse & de la Nature',
             alt: 'Logo - MCN'
@@ -294,9 +263,19 @@ var app = new Vue({
       },
       {
         title: "Digiworks - Graphic Designer Intern",
-        description: "Game assets / Game Interface / Illustration",
+        description: "Game assets design / UI",
         currentNumber: 0,
         images: [{
+          src: 'assets/images/digiworks/interface_1.jpg',
+          info: 'UI pour un outil de concertation publique - IWA',
+          alt: 'Interface Menu IWA'
+          },
+          {
+            src: 'assets/images/digiworks/interface_2.jpg',
+            info: 'UI pour un outil de concertation publique - IWA',
+            alt: 'Interface in game IWA - simulation'
+          },
+          {
             src: 'assets/images/digiworks/game_assets_1.jpg',
             info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
             alt: 'Modules végétaux en isométrie'
@@ -320,37 +299,6 @@ var app = new Vue({
             src: 'assets/images/digiworks/game_assets_5.jpg',
             info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
             alt: 'Modules en isométrie'
-          },
-          {
-            src: 'assets/images/digiworks/interface_1.jpg',
-            info: 'UI pour un outil de concertation publique - IWA',
-            alt: 'Interface Menu IWA'
-          },
-          {
-            src: 'assets/images/digiworks/interface_2.jpg',
-            info: 'UI pour un outil de concertation publique - IWA',
-            alt: 'Interface in game IWA - simulation'
-          },
-          {
-            src: 'assets/images/digiworks/illu_1.jpg',
-            info: 'Illustration High Five',
-            alt: 'Illustration High Five'
-          },
-          {
-            src: 'assets/images/digiworks/illu_2.jpg',
-            info: 'Illustrations Concertation & Smartphone',
-            alt: '2 Illustrations isométrie - Concertation & Smartphone '
-          }
-        ]
-      },
-      {
-        title: "<a href='https://resonancem1.wordpress.com/' target='_blank' rel='noreferrer, noopener'>Resonance</a>",
-        description: "Student project",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/resonance/visuel.jpg',
-            info: 'Logo Resonance',
-            alt: 'Logo Resonance'
           }
         ]
       },
@@ -385,86 +333,8 @@ var app = new Vue({
           }
         ]
       },
-      {
-        title: "Devoteam - Graphic Designer Intern",
-        description: "Illustration / Logo / Pattern",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/devoteam/catcher.png',
-            info: 'Illustration - Claw Machine',
-            alt: 'Illustration flat design - Claw Machine'
-          },
-          {
-            src: 'assets/images/devoteam/workspace.png',
-            info: 'Illustration - Working space',
-            alt: 'Illustration flat design - Working space'
-          },
-          {
-            src: 'assets/images/devoteam/phare.png',
-            info: 'Illustration - Lighthouse',
-            alt: 'Illustration flat design - Lighthouse'
-          },
-          {
-            src: 'assets/images/devoteam/kite.png',
-            info: 'Illustration - Kite',
-            alt: 'Illustration flat design - Kite'
-          },
-          {
-            src: 'assets/images/devoteam/hive.png',
-            info: 'Logo pour Hive - Devoteam Intranet',
-            alt: 'Logo Hive Devoteam Intranet'
-          },
-          {
-            src: 'assets/images/devoteam/kc.png',
-            info: 'Logo pour les Knowledge Communities',
-            alt: 'Logo Knowledge Communities Devoteam'
-          },
-          {
-            src: 'assets/images/devoteam/cubes.png',
-            info: 'Pattern - Cubes ',
-            alt: 'Pattern flat design - Cubes'
-          },
-          {
-            src: 'assets/images/devoteam/column.png',
-            info: 'Pattern - Columns',
-            alt: 'Pattern flat design - Columns'
-          },
-          {
-            src: 'assets/images/devoteam/lines.png',
-            info: 'Pattern - Lines',
-            alt: 'Pattern flat design - Lines'
-          }
         ]
       },
-      {
-        title: "Personal creations",
-        description: "Find more on <a href='https://dribbble.com/lXlON' target='_blank' rel='noreferrer, noopener'>Dribbble</a>",
-        currentNumber: 0,
-        images: [
-          {
-            src: 'assets/images/random/atlas_m.jpg',
-            info: 'Photomanipulation Altas portant la Terre',
-            alt: 'Photomanipulation Altas portant la Terre'
-          },
-          {
-            src: 'assets/images/random/les_pluriels.jpg',
-            info: 'Affiche Festival Les Pluriels 20e Edition',
-            alt: 'Affiche Festival Les Pluriels 20e Edition'
-          },
-          {
-            src: 'assets/images/random/pub.jpg',
-            info: 'Fake Pub LG TV',
-            alt: 'Pub LG TV'
-          },
-          {
-            src: 'assets/images/random/spoof_ad.jpg',
-            info: 'Fake pub Nike',
-            alt: 'Fake pub Nike'
-          }
-        ]
-      }
-    ]
-  },
   methods: {
     toggle: function(event) {
       var target = event.target.nextElementSibling;

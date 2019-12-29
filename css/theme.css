@@ -39,10 +39,9 @@
 
 a, a:hover {
   cursor: url(../assets/icons/cursor_hover.svg), pointer !important;
-  transition: transform 0.5 ease-in;
 }
 
-img:hover{
+img:hover {
   cursor: url(../assets/icons/hover.svg), pointer !important;
 }
 
@@ -52,24 +51,40 @@ body {
 }
 
 /* Darkmode */
+* .darkmode--activated {
+  cursor: url(../assets/icons/dark_cursor.svg), auto !important;
+}
+
+.darkmode--activated a, .darkmode--activated a:hover {
+  cursor: url(../assets/icons/dark_cursor_hover.svg), pointer !important;
+}
+
+.darkmode--activated img:hover {
+  cursor: url(../assets/icons/dark_hover.svg), pointer !important;
+}
+
 .darkmode-toggle {
   z-index: 500;
 }
+
 .darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body, .darkmode--activated .number {
   color: yellow;
 }
+
 .dark--activated span {
   color: yellow;
 }
+
 .darkmode--activated .cursor {
   background-color: yellow;
 }
+
 .darkmode--activated a:before {
   border-bottom: 3px solid yellow;
 }
 
-.darkmode--activated a:hover{
-  color:blue;
+.darkmode--activated a:hover {
+  color: blue;
 }
 
 .darkmode--activated a:after {
@@ -88,8 +103,6 @@ body {
   pointer-events: none;
   z-index: 10000;
 } */
-
-
 img[alt=""], img:not([alt]) {
   filter: grayscale(100%);
 }
@@ -98,11 +111,11 @@ img[alt=""], img:not([alt]) {
   font-size: 1.1rem;
 }
 
-.copyright{
+.copyright {
   position: fixed;
   z-index: 10001;
   margin-left: 20px;
-  bottom : 10px;
+  bottom: 10px;
   font-size: 0.8rem;
 }
 
@@ -182,7 +195,6 @@ img[alt=""], img:not([alt]) {
         opacity: 1;
     }
 } */
-
 /* changement responsive */
 @media (max-width: 600px) {
   * {
@@ -218,7 +230,8 @@ img[alt=""], img:not([alt]) {
   .cursor {
     display: none;
   }
-  .copyright{
+
+  .copyright {
     display: none;
   }
 }
@@ -285,7 +298,7 @@ img {
   margin: 10px;
 }
 
-.details{
+.details {
   font-size: 1.4em;
 }
 
@@ -378,7 +391,6 @@ a {
 /* #image {
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 } */
-
 /* Effet glitched hover framework */
 .glitched:hover {
   -webkit-animation: glitch1 2.5s infinite;
