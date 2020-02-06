@@ -262,47 +262,6 @@ var app = new Vue({
         ]
       },
       {
-        title: "Digiworks - Graphic Designer Intern",
-        description: "Game assets design / UI",
-        currentNumber: 0,
-        images: [{
-          src: 'assets/images/digiworks/interface_1.jpg',
-          info: 'UI pour un outil de concertation publique - IWA',
-          alt: 'Interface Menu IWA'
-          },
-          {
-            src: 'assets/images/digiworks/interface_2.jpg',
-            info: 'UI pour un outil de concertation publique - IWA',
-            alt: 'Interface in game IWA - simulation'
-          },
-          {
-            src: 'assets/images/digiworks/game_assets_1.jpg',
-            info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
-            alt: 'Modules végétaux en isométrie'
-          },
-          {
-            src: 'assets/images/digiworks/game_assets_2.jpg',
-            info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
-            alt: 'Modules en isométrie'
-          },
-          {
-            src: 'assets/images/digiworks/game_assets_3.jpg',
-            info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
-            alt: 'Modules en isométrie'
-          },
-          {
-            src: 'assets/images/digiworks/game_assets_4.jpg',
-            info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
-            alt: 'Modules en isométrie'
-          },
-          {
-            src: 'assets/images/digiworks/game_assets_5.jpg',
-            info: 'Illustrations de modules en 3d isométrique pour un outil de concertation publique - IWA',
-            alt: 'Modules en isométrie'
-          }
-        ]
-      },
-      {
         title: "BFM TV Rebrand Idea",
         description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
