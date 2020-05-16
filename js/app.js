@@ -141,7 +141,7 @@ var app = new Vue({
       },
       {
         title: "Master DGDI Identity",
-        description: "Personal project - Made for fun",
+        description: "Personal project",
         currentNumber: 0,
         images: [{
             src: 'assets/images/dgdi/logo.jpg',
@@ -207,7 +207,7 @@ var app = new Vue({
       },
       {
         title: "Musée de la Chasse & de la Nature - Rebrand Idea",
-        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        description: "Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/mcn/logo.jpg',
@@ -263,7 +263,7 @@ var app = new Vue({
       },
       {
         title: "BFM TV Rebrand Idea",
-        description: "Student project - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        description: "Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/bfm/logo.jpg',

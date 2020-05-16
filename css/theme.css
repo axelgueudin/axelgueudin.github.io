@@ -1,16 +1,6 @@
 @font-face {
-  font-family: Aktiv Grotesk Bold;
-  src: url(../fonts/Aktiv_Grotesk_W01_Bold.ttf);
-}
-
-@font-face {
-  font-family: Aktiv Grotesk Regular;
-  src: url(../fonts/Aktiv_Grotesk_W06_Regular.ttf);
-}
-
-@font-face {
-  font-family: Aktiv Grotesk Italic;
-  src: url(../fonts/Aktiv_Grotesk_W06_Italic.ttf);
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
 }
 
 @font-face {
@@ -47,76 +37,50 @@ img:hover {
 
 body {
   color: blue;
+  font-family: 'SpaceMono Regular', sans-serif;
+  line-height: 1.2;
+}
+
+h1, h3, a {
   font-family: 'SpaceMono Bold', sans-serif;
 }
 
-/* Darkmode */
-* .darkmode--activated {
-  cursor: url(../assets/icons/dark_cursor.svg), auto !important;
+header{
+  width: 80%;
+  margin: auto;
 }
 
-.darkmode--activated a, .darkmode--activated a:hover {
-  cursor: url(../assets/icons/dark_cursor_hover.svg), pointer !important;
+header *{
+    line-height: 0.5;
 }
 
-.darkmode--activated img:hover {
-  cursor: url(../assets/icons/dark_hover.svg), pointer !important;
+h1{
+  font-size: 2rem
 }
 
-.darkmode-toggle {
-  z-index: 500;
+h2{
+  font-size: 1rem
 }
 
-.darkmode--activated li, .darkmode--activated a, .darkmode--activated .copyright, .darkmode--activated body, .darkmode--activated .number {
-  color: yellow;
+#info{
+  width:80%;
+  margin: auto;
 }
 
-.dark--activated span {
-  color: yellow;
+.mb-1{
+  margin-bottom: 1rem;
 }
 
-.darkmode--activated .cursor {
-  background-color: yellow;
+.mb-2{
+  margin-bottom: 2rem;
 }
 
-.darkmode--activated a:before {
-  border-bottom: 3px solid yellow;
+.p-5{
+  padding: 5rem 0 5rem 0;
 }
 
-.darkmode--activated a:hover {
-  color: blue;
-}
-
-.darkmode--activated a:after {
-  border-bottom: 3px solid blue;
-}
-
-/* .cursor {
-  position: absolute;
-  border-radius: 50%;
-  transition: opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
-  width: 8px;
-  height: 8px;
-  background-color: blue;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-} */
 img[alt=""], img:not([alt]) {
   filter: grayscale(100%);
-}
-
-.internship {
-  font-size: 1.1rem;
-}
-
-.copyright {
-  position: fixed;
-  z-index: 10001;
-  margin-left: 20px;
-  bottom: 10px;
-  font-size: 0.8rem;
 }
 
 /* loader */
@@ -177,66 +141,27 @@ img[alt=""], img:not([alt]) {
   color: #000;
 }
 
-/* reveal effect
-.in-view {
-    animation: animate-in-view .6s ease-out forwards;
+
+.work-title-container{
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-@keyframes animate-in-view {
-    0% {
-        transform: translate(0, 20px) scale(1);
-        opacity: 0;
-    }
-    35% {
-        transform: translate(0, 20px) scale(1);
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
-/* changement responsive */
-@media (max-width: 600px) {
-  * {
-    cursor: default;
-  }
+.work-title {
+  font-size: 16rem;
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: bold;
+  display: inline-block;
 
-  .work-toggle-container {
-    border-bottom: solid 1px blue;
-    border-right: none !important;
-    height: 50vh !important;
-  }
-
-  .about-toggle-container {
-    height: 50vh !important;
-  }
-
-  .project-container, .text-container {
-    border-left: none !important;
-  }
-
-  .about-close, .work-close {
-    position: relative !important;
-    top: 0;
-    height: auto !important;
-    border-bottom: solid 1px blue;
-  }
-
-  .fixed-cross {
-    position: relative !important;
-    top: 0;
-  }
-
-  .cursor {
-    display: none;
-  }
-
-  .copyright {
-    display: none;
-  }
+  position: relative;
+  left: -800px;
 }
 
-.site_header {}
+.work-title span{
+  -webkit-text-stroke: 2px blue;
+  color: transparent;
+}
 
 /* Effet underline link */
 a:before {
@@ -294,6 +219,10 @@ img {
   clear: both;
 }
 
+.wh{
+    color: white;
+}
+
 .description {
   margin: 10px;
 }
@@ -302,84 +231,17 @@ img {
   font-size: 1.4em;
 }
 
+.slider *{
+  padding-left: 5rem;
+}
+
 /* link toggle */
-.work-toggle a {
-  transition: all 100ms ease-in-out;
-}
-
-.work-toggle-container {
-  border-right: solid 1px blue;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fixed-cross {
-  margin: auto;
-  position: fixed;
-}
-
-.work-close, .about-close {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-toggle-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-container {
-  border-left: solid 1px blue;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .slider {
   margin: 20px 20px 10px 5px;
 }
 
-.text-container {
-  border-left: solid 1px blue;
-  font-size: 20px;
-  line-height: 1.5;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.gif {
-  display: none;
-}
-
-blockquote:hover+.gif {
-  display: block;
-  position: absolute;
-}
-
-blockquote {
-  cursor: default;
-}
-
 p {
   margin: 10px 0 10px 0;
-}
-
-/* effet blur */
-a:active, .work-toggle:active, .about-toggle:active {
-  transform: scale(.95);
-  filter: blur(2px);
 }
 
 a {
@@ -388,176 +250,35 @@ a {
   /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
 
-/* #image {
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-} */
-/* Effet glitched hover framework */
-.glitched:hover {
-  -webkit-animation: glitch1 2.5s infinite;
-  animation: glitch1 2.5s infinite;
+.bb {
+  border-bottom: 1px solid blue;
 }
 
-span.glitched:hover {
-  -webkit-animation: glitch1 1.5s infinite;
-  animation: glitch1 1.5s infinite;
+.bt {
+  border-top: 1px solid blue;
 }
 
-@-webkit-keyframes glitch1 {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  7% {
-    -webkit-transform: skew(-0.5deg, -0.9deg);
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
-  }
-
-  10% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  27% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  30% {
-    -webkit-transform: skew(0.8deg, -0.1deg);
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-  }
-
-  35% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  52% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  55% {
-    -webkit-transform: skew(-1deg, 0.2deg);
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
-  }
-
-  50% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  72% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  75% {
-    -webkit-transform: skew(0.4deg, 1deg);
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-  }
-
-  80% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
+.ds{
+   box-shadow: 0 0 0 3px blue);
+  /* filter: drop-shadow(50px 50px 0px blue); */
 }
 
-@keyframes glitch1 {
-  0% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+/* changement responsive */
+@media (max-width: 600px) {
+  * {
+    cursor: default;
   }
 
-  7% {
-    -webkit-transform: skew(-0.5deg, -0.9deg);
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
+  .cursor {
+    display: none;
   }
 
-  10% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+  .work-title{
+    font-size: 6rem;
+    left: -600px;
   }
 
-  27% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  30% {
-    -webkit-transform: skew(0.8deg, -0.1deg);
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-  }
-
-  35% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  52% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  55% {
-    -webkit-transform: skew(-1deg, 0.2deg);
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
-  }
-
-  50% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  72% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  75% {
-    -webkit-transform: skew(0.4deg, 1deg);
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-  }
-
-  80% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+  .slider *{
+    padding-left: 0;
   }
 }

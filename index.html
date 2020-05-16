@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
   <title>AXEL GUEUDIN | Graphiste & UI Designer</title>
   <meta name="description" content="Axel Gueudin, graphiste et UX/UI designer freelance basé à Rouen prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI" />
-  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, student, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence, 76000 " />
+  <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence " />
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-touch-icon.png">
@@ -28,7 +28,7 @@
   <meta name="twitter:site" content="@lXlON">
 </head>
 
-<body class="" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+<body class="">
   <div id="app" class="container-fluid">
     <div id="loader-wrapper" class="row">
       <div id="loader" class="col s12 m12 l12">
@@ -40,182 +40,102 @@
       <div class="loader-section"></div>
 
     </div>
-    <p class="copyright">&copy; Axel GUEUDIN 2020</p>
-    <div id="home" class="row">
-      <div class="work-toggle-container col s12 m6 l6">
-        <a class="work-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#work">work</a>
-      </div>
-      <div class="about-toggle-container col s12 m6 l6">
-        <a class="about-toggle text-center flow-text fittext-h1 allcaps guard-text glitched" href="#about">about</a>
-      </div>
-    </div>
-    <div id="portfolio" class="row">
-      <div class="work-close col s12 m2 l2">
-        <div class="fixed-cross">
-          <a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
-        </div>
-      </div>
-      <div class="project-container col s12 m10 l10">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="project col s12 m12 l12" v-for="project in projects">
-              <div class="slider" ref="slider">
-                <img class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt" />
-              </div>
-              <div class="description">
-                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
-                <span class="counter" v-if="project.images.length>1"><span class="number" style="position:relative; right: 2px;">{{project.currentNumber+1}}/</span>{{project.images.length}}</span>
-                <p class="details flow-text" v-html="project.description"></p>
-                <p class="project-title flow-text" v-html="project.title"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="info">
-      <div class="about-container row">
-        <div class="about-close col s12 m2 l2">
-          <div class="fixed-cross">
-            <a href="#" class="btn-close text-center flow-text fittext-h1 allcaps guard-text glitched">X</a>
-          </div>
-        </div>
-        <div class="text-container col s12 m10 l10">
-          <div class="row">
-            <div class="col s12 m6 l6">
-              <h1 class="fittext-h1 reveal">
-                Hi, I'm Axel!
-              </h1>
-              <p class="flow-text reveal">
-                Rouen. FR.
-              </p>
-              <p class="flow-text">
-                Currently looking for a job as Graphic
-                </br /> or UI/UX Designer.
-              </p>
-              <p class="flow-text">
-                <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello.
-              </p>
-              <p class="flow-text">
-                <a href="mailto:axelgueud@gmail.com">E-mail</a>
-                /
-                <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
-                /
-                <a href="https://github.com/axelgueudin/" target="_blank" rel="noreferrer, noopener">Github</a>
-                /
-                <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank" rel="noreferrer, noopener">LinkedIn</a>
-              </p>
 
-              <h1 class="fittext-h1">Experience</h1>
-              <h2 class="internship">Internship</h2>
-              <p class="flow-text">
-                <a href="https://www.publipress.fr/" target="_blank" rel="noreferrer, noopener">Publipress</a> - January &rarr; April 2019
-                <br /> <a href="https://www.digiworks.fr/" target="_blank" rel="noreferrer, noopener">Digiworks</a> - April &rarr; July 2018
-                <br /> <a href="https://www.devoteam.com/" target="_blank" rel="noreferrer, noopener">Devoteam</a> - February &rarr; June 2017
-                <br /> <a href="http://espe.univ-rouen.fr/" target="_blank" rel="noreferrer, noopener">ESPE Rouen</a> - April &rarr; June 2016
-              </p>
-            </div>
-            <div class="col s12 m6 l6">
-              <h1 class="fittext-h1">Education</h1>
-              <p class="flow-text">
-                Master DGDI - Valenciennes - 2017 &rarr; 2019
-                <br /> Licence Pro ATC - Rouen - 2016 &rarr; 2017
-                <br /> DUT MMI - Rouen - 2014 &rarr; 2016<br />
-              </p>
-              <h1 class="fittext-h1">Skills</h1>
-              <p class="flow-text">Branding
-                <br /> Illustration
-                <br /> UX Design
-                <br /> UI Design
-                <br /> Web Dev
-                <br /> Game Design
-              </p>
-            </div>
-          </div>
+<header class="bb">
+  <h1>Axel GUEUDIN</h1>
+  <h2>Branding & UI</h2>
+</header>
+
+<!-- Info -->
+
+<div id="info" class="p-5">
+  <div class="about-container row">
+    <div class="text-container col s12 m12 l12">
+      <div class="row">
+        <div class="s12 m12 l12">
+          <p class="fittext-h1 reveal">
+            Hi, I'm Axel!
+          </p>
+          <p class="flow-text reveal">
+            Living in Rouen. FR.
+          </p>
+          <p class="flow-text">
+            Currently looking for a job as Graphic or UI/UX Designer.
+          </p>
+          <p class="flow-text">
+            <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello.
+          </p>
+          <p class="flow-text">
+            <a href="mailto:axelgueud@gmail.com">E-mail</a>
+            /
+            <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
+            /
+            <a href="https://github.com/axelgueudin/" target="_blank" rel="noreferrer, noopener">Github</a>
+            /
+            <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank" rel="noreferrer, noopener">LinkedIn</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="cursor"></div> -->
-  <!--  Scripts-->
-  <!-- VUE JS TEST -->
+</div>
+
+<!-- WORK -->
+<div class="work-title-container">
+  <div class="work-title mb-1">
+    <p class="">
+      WORKS↓
+      <span>
+        WORKS↓
+      </span>
+      WORKS↓
+    </p>
+  </div>
+</div>
+
+
+
+    <div id="portfolio" class="row">
+      <div class="project-container s12 m12 l12">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="project col s12 m12 l12 mb-2" v-for="project in projects">
+
+              <div class="description col s12 m2 l2 bt">
+                <h3 class="project-title flow-text" v-html="project.title"></h3>
+                <p class="details flow-text" v-html="project.description"></p>
+              </div>
+
+              <div class="slider col s12 m9 l9" ref="slider">
+                <img class="responsive ds" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt" />
+                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
+                <span class="counter" v-if="project.images.length>1">
+                  <span class="number" style="position:relative; right: 2px;">
+                    {{project.currentNumber+1}}/
+                  </span>
+                  {{project.images.length}}
+              </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <script src="js/vue.min.js"></script>
   <script src="js/app.js"></script>
-  <!-- <script src="js/cursor.js"></script> -->
   <script src="js/jquery.js"></script>
   <script src="js/brutalist.js"></script>
   <script src="js/start.brutalizing.js"></script>
   <script src="js/funtab.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
-  <script>
-    const mq = window.matchMedia( "(max-width: 600px)" );
-      if (mq.matches) {
-        // options pour mobile
-            var options = {
-            bottom: '92%', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true, // default: true
-            }
-      } else {
-        // options normal
-          var options = {
-          bottom: '64px', // default: '32px'
-          right: 'unset', // default: '32px'
-          left: '32px', // default: 'unset'
-          time: '0.5s', // default: '0.3s'
-          mixColor: '#fff', // default: '#fff'
-          backgroundColor: '#fff',  // default: '#fff'
-          buttonColorDark: '#100f2c',  // default: '#100f2c'
-          buttonColorLight: '#fff', // default: '#fff'
-          saveInCookies: false, // default: true,
-          label: '🌓', // default: ''
-          autoMatchOsTheme: true, // default: true
-        }
-      }
-    const darkmode = new Darkmode(options);
-    darkmode.showWidget();
-  </script>
   <script>
     $(document).ready(function() {
       setTimeout(function() {
         $('body').addClass('loaded');
       }, 5000);
-
-      $('#portfolio').hide();
-      $('#info').hide();
-
-      $('.work-toggle-container a').on('click', function() {
-        $('.work-toggle-container').hide();
-        $('.about-toggle-container').hide();
-        $('#portfolio').show();
-
-      });
-
-      $('.btn-close').on('click', function() {
-        $('.work-toggle-container').show();
-        $('.about-toggle-container').show();
-        $('#portfolio').hide();
-      });
-
-      $('.about-toggle-container a').on('click', function() {
-        $('.work-toggle-container').hide();
-        $('.about-toggle-container').hide();
-        $('#info').show();
-      });
-
-      $('.btn-close').on('click', function() {
-        $('.work-toggle-container').show();
-        $('.about-toggle-container').show();
-        $('#info').hide();
-      });
     });
   </script>
   <script src="//instant.page/2.0.0" type="module" integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
