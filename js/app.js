@@ -3,8 +3,61 @@ var app = new Vue({
   data: {
     projects: [
       {
+        title: "Assassin's Creed Odyssey - Inventory Menu redesign",
+        tag: "UI Design",
+        description: "Personal project",
+        currentNumber: 0,
+        images: [{
+            src: 'assets/images/ac_ody/cover.png',
+            info: '',
+            alt: 'Project cover'
+          },
+          {
+            src: 'assets/images/ac_ody/wireframe new inventory.png',
+            info: 'Wireframe inventory',
+            alt: 'Wireframe inventory'
+          },
+          {
+            src: 'assets/images/ac_ody/new inventory.png',
+            info: 'Mockup Inventory',
+            alt: 'Mockup Inventory'
+          },
+          {
+            src: 'assets/images/ac_ody/raccourcis quick wireframe.png',
+            info: 'Wireframe Loadout Inventory Menu',
+            alt: 'Wireframe Loadout Inventory Menu'
+          },
+          {
+            src: 'assets/images/ac_ody/mockup new shortcut.png',
+            info: 'Mockup PC Shortcuts',
+            alt: 'Mockup PC Shortcuts'
+          },
+          {
+            src: 'assets/images/ac_ody/raccourcis wireframe console.png',
+            info: 'Wireframe Console Shortcuts',
+            alt: 'Wireframe Console Shortcuts'
+          },
+          {
+            src: 'assets/images/ac_ody/raccourcis wireframe console-1.png',
+            info: 'Wireframe Console Shortcuts',
+            alt: 'Wireframe Console Shortcuts'
+          },
+          {
+            src: 'assets/images/ac_ody/mockup new shortcut console.png',
+            info: 'Mockup Console Shortcuts',
+            alt: 'Mockup Console Shortcuts'
+          },
+          {
+            src: 'assets/images/ac_ody/mockup new shortcut console-1.png',
+            info: 'Mockup Console Shortcuts',
+            alt: 'Mockup Console Shortcuts'
+          }
+        ]
+      },
+      {
         title: "[WIP] FPS SCI-FI Loadout Menu",
-        description: "UI Design",
+        tag: "UI Design",
+        description: "Personal project",
         currentNumber: 0,
         images: [{
             src: 'assets/images/ui_exo/loadout.jpg',
@@ -35,7 +88,8 @@ var app = new Vue({
       },
       {
         title: "<a href='/biotica'>Biotica</a> - Hybrid game about biodiversity ",
-        description: "[WIP] - Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        tag: "UI Design / Art Direction / Unity Dev",
+        description: "[WIP] - Made with <a href='https://www.behance.net/sarahbance/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/biotica/visuel.jpg',
@@ -103,11 +157,6 @@ var app = new Vue({
             alt: 'Jeu en cours'
           },
           {
-            src: 'assets/images/biotica/photos/closeUp.jpg',
-            info: '-',
-            alt: 'Zoom sur le jeu'
-          },
-          {
             src: 'assets/images/biotica/photos/arbres.jpg',
             info: 'Cartes ressources / Espèce invasive',
             alt: 'Cartes'
@@ -141,6 +190,7 @@ var app = new Vue({
       },
       {
         title: "Master DGDI Identity",
+        tag: "Branding",
         description: "Personal project",
         currentNumber: 0,
         images: [{
@@ -171,7 +221,7 @@ var app = new Vue({
           {
             src: 'assets/images/dgdi/hoodie.jpg',
             info: 'Hoodie',
-            alt: 'Hoodie'
+            alt: 'Mockup Hoodie vert'
           },
           {
             src: 'assets/images/dgdi/bracelet.jpg',
@@ -181,7 +231,7 @@ var app = new Vue({
           {
             src: 'assets/images/dgdi/flag.jpg',
             info: 'Flag',
-            alt: 'Flag'
+            alt: 'Mockup de drapeau'
           },
           {
             src: 'assets/images/dgdi/bus.jpg',
@@ -207,7 +257,8 @@ var app = new Vue({
       },
       {
         title: "Musée de la Chasse & de la Nature - Rebrand Idea",
-        description: "Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
+        tag: "Branding",
+        description: "Made with <a href='https://www.behance.net/sarahbance/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         currentNumber: 0,
         images: [{
             src: 'assets/images/mcn/logo.jpg',
@@ -258,37 +309,6 @@ var app = new Vue({
             src: 'assets/images/mcn/tote.jpg',
             info: 'Tote bag',
             alt: 'Mockup Tote bag'
-          }
-        ]
-      },
-      {
-        title: "BFM TV Rebrand Idea",
-        description: "Made with <a href='https://bance-sarah.github.io/portfolio/' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
-        currentNumber: 0,
-        images: [{
-            src: 'assets/images/bfm/logo.jpg',
-            info: 'Logo BFMTV',
-            alt: 'Logo principal BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/logos.jpg',
-            info: 'Déclinaisons logo BFMTV',
-            alt: 'Déclinaisons logo BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/cards.jpg',
-            info: 'Cartes visites BFMTV',
-            alt: 'Mockup cartes visites BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/wall_1.jpg',
-            info: 'Locaux BFMTV',
-            alt: 'Mockup locaux BFMTV'
-          },
-          {
-            src: 'assets/images/bfm/wall_2.jpg',
-            info: 'Locaux ascenseur BFMTV',
-            alt: 'Mockup locaux ascenseur BFMTV'
           }
         ]
       },

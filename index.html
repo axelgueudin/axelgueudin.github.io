@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-  <title>AXEL GUEUDIN | Graphiste & UI Designer</title>
+  <title>AXEL GUEUDIN | Freelance Graphic & UI Designer</title>
   <meta name="description" content="Axel Gueudin, graphiste et UX/UI designer freelance basé à Rouen prêt à réaliser votre communication : logotype, identité visuelle, print et webdesign UX/UI" />
   <meta name="keywords" content="axel, gueudin, brutalism, brutalist, portfolio, graphic design, ux, ui, Rouen, Graphiste, Freelance, Etudiant, Rouennais, 76, Graphisme, design, communication, agence " />
 
@@ -60,15 +60,19 @@
             Living in Rouen. FR.
           </p>
           <p class="flow-text">
-            Currently looking for a job as Graphic or UI/UX Designer.
+            Looking for a job as Graphic or UI/UX Designer.
+             <br />
+            & Available for freelance missions!
           </p>
           <p class="flow-text">
-            <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello.
+            <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello 👋.
           </p>
           <p class="flow-text">
             <a href="mailto:axelgueud@gmail.com">E-mail</a>
             /
             <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
+            /
+            <a href="https://behance.net/axelgueudin" target="_blank" rel="noreferrer, noopener">Behance</a>
             /
             <a href="https://github.com/axelgueudin/" target="_blank" rel="noreferrer, noopener">Github</a>
             /
@@ -81,18 +85,19 @@
 </div>
 
 <!-- WORK -->
-<div class="work-title-container">
-  <div class="work-title mb-1">
-    <p class="">
-      WORKS↓
-      <span>
-        WORKS↓
-      </span>
-      WORKS↓
-    </p>
-  </div>
+<div class="work-title-container" data-scroll-container>
+    <div class="work-title mb-1" data-scroll-section>
+      <div id="direction">
+        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-target="#direction">
+            WORKS↓
+              <span>
+                WORKS↓
+              </span>
+            WORKS↓
+        </p>
+      </div>
+    </div>
 </div>
-
 
 
     <div id="portfolio" class="row">
@@ -103,11 +108,12 @@
 
               <div class="description col s12 m2 l2 bt">
                 <h3 class="project-title flow-text" v-html="project.title"></h3>
+                <p class="tag flow-text" v-html="project.tag"></p>
                 <p class="details flow-text" v-html="project.description"></p>
               </div>
 
               <div class="slider col s12 m9 l9" ref="slider">
-                <img class="responsive ds" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt" />
+                <img loading="lazy" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt"/>
                 <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
                 <span class="counter" v-if="project.images.length>1">
                   <span class="number" style="position:relative; right: 2px;">
@@ -135,10 +141,16 @@
     $(document).ready(function() {
       setTimeout(function() {
         $('body').addClass('loaded');
-      }, 5000);
+      }, 2000);
     });
   </script>
-  <script src="//instant.page/2.0.0" type="module" integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
+  <!-- <script src="js/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      var scroll = new LocomotiveScroll({ el: document.querySelector('[data-scroll-container]'), smooth: true });
+    })();
+    console.log('ok');
+  </script> -->
 </body>
 
 </html>

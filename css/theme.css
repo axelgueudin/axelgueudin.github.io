@@ -143,7 +143,7 @@ img[alt=""], img:not([alt]) {
 
 
 .work-title-container{
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -153,7 +153,6 @@ img[alt=""], img:not([alt]) {
   font-family: 'Monument Extended', sans-serif;
   font-weight: bold;
   display: inline-block;
-
   position: relative;
   left: -800px;
 }
@@ -205,7 +204,6 @@ a:hover:after {
 img {
   max-width: 100%;
   height: auto;
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -229,6 +227,11 @@ img {
 
 .details {
   font-size: 1.4em;
+}
+
+.tag {
+  font-size: 1em;
+  font-style: italic;
 }
 
 .slider *{
@@ -256,11 +259,6 @@ a {
 
 .bt {
   border-top: 1px solid blue;
-}
-
-.ds{
-   box-shadow: 0 0 0 3px blue);
-  /* filter: drop-shadow(50px 50px 0px blue); */
 }
 
 /* changement responsive */
