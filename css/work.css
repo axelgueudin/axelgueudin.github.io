@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+  font-family: SpaceMono Bold;
+  src: url(../fonts/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono Bold Italic;
+  src: url(../fonts/SpaceMono-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono Regular;
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Work Sans Regular;
+  src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+* {
+  cursor: url(../assets/icons/cursor.svg), auto !important;
+}
+
+a, a:hover {
+  cursor: url(../assets/icons/cursor_hover.svg), pointer !important;
+}
+
+a{
+  position: relative;
+  color: inherit;
+}
+
+::selection{
+  background-color: yellow;
+}
+
+/* header */
+
+header{
+  width: 80%;
+  margin: auto;
+}
+
+header *{
+    line-height: 0.5;
+}
+
+header h1{
+  font-size: 2rem
+}
+
+header h2{
+  font-size: 1rem
+}
+
+.bb {
+  border-bottom: 1px solid blue;
+}
+
+.description{
+  font-family: 'Work Sans Regular', sans-serif;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+p .description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75ch;
+}
+
+.nav{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nav ul:first-child {
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.title{
+  font-size: 4rem;
+  text-align: center;
+}
+
+ul, li{
+  list-style: none;
+}
+
+/* Effet underline link */
+a:hover {
+  color: lime;
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transition: 0.4s;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid lime;
+  transition: 0.4s;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+body {
+  color: blue;
+  font-family: 'SpaceMono Regular', sans-serif;
+  line-height: 1.2;
+}
+
+h1, h3, a {
+  font-family: 'SpaceMono Bold', sans-serif;
+}
+
+.container-fluid{
+  width: 80%;
+}
+
+.back{
+  margin: 100px;
+  text-align: center;
+}
+
+img[alt=""], img:not([alt]) {
+  filter: grayscale(100%);
+}
+
+/* ajustement div images */
+.portfolio {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid rgba(0, 0, 0, .1) ;
+}

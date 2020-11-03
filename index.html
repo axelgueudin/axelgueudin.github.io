@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!-- Ne faites pas attention au code, il est plutôt moche mais il fonctionne. Je vais me former correctement à Vue d'ici peu. -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
@@ -20,8 +20,8 @@
 
   <meta property="og:title" content="AXEL GUEUDIN | Graphiste & UI Designer">
   <meta property="og:locale" content="fr_FR">
-  <link rel="canonical" href="https://axelgueudin.github.io">
-  <meta property="og:url" content="https://axelgueudin.github.io">
+  <link rel="canonical" href="https://axelgueudin.fr">
+  <meta property="og:url" content="https://axelgueudin.fr">
   <meta property="og:site_name" content="AXEL GUEUDIN | Graphiste & UI Designer">
   <meta property="og:description" content="Axel Gueudin, Graphiste et UX/UI designer !">
   <meta name="twitter:card" content="summary">
@@ -65,18 +65,18 @@
             & Available for freelance missions!
           </p>
           <p class="flow-text">
-            <a href="https://twitter.com/lXlON" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello 👋.
+            <a href="https://twitter.com/lXlON" class="underline" target="_blank" rel="noreferrer, noopener">DM me</a> if you want to say hello 👋.
           </p>
           <p class="flow-text">
-            <a href="mailto:axelgueud@gmail.com">E-mail</a>
+            <a href="mailto:axelgueud@gmail.com" class="underline">E-mail</a>
             /
-            <a href="https://dribbble.com/lXlON" target="_blank" rel="noreferrer, noopener">Dribbble</a>
+            <a href="https://dribbble.com/lXlON" class="underline" target="_blank" rel="noreferrer, noopener">Dribbble</a>
             /
-            <a href="https://behance.net/axelgueudin" target="_blank" rel="noreferrer, noopener">Behance</a>
+            <a href="https://behance.net/axelgueudin" class="underline" target="_blank" rel="noreferrer, noopener">Behance</a>
             /
-            <a href="https://github.com/axelgueudin/" target="_blank" rel="noreferrer, noopener">Github</a>
+            <a href="https://github.com/axelgueudin/" class="underline" target="_blank" rel="noreferrer, noopener">Github</a>
             /
-            <a href="https://www.linkedin.com/in/axel-gueudin-b8b059121/" target="_blank" rel="noreferrer, noopener">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/axelgueudin/" class="underline" target="_blank" rel="noreferrer, noopener">LinkedIn</a>
           </p>
         </div>
       </div>
@@ -107,20 +107,15 @@
             <div class="project col s12 m12 l12 mb-2" v-for="project in projects">
 
               <div class="description col s12 m2 l2 bt">
-                <h3 class="project-title flow-text" v-html="project.title"></h3>
+                  <h3 class="project-title flow-text" v-html="project.title"></h3>
                 <p class="tag flow-text" v-html="project.tag"></p>
                 <p class="details flow-text" v-html="project.description"></p>
               </div>
 
               <div class="slider col s12 m9 l9" ref="slider">
-                <img loading="lazy" class="responsive" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" :src="image.src" @click="next(project)" :alt="image.alt"/>
-                <span class="informations flow-text" v-for="image in project.images" v-show="project.currentNumber == project.images.indexOf(image)" v-html="image.info"></span>
-                <span class="counter" v-if="project.images.length>1">
-                  <span class="number" style="position:relative; right: 2px;">
-                    {{project.currentNumber+1}}/
-                  </span>
-                  {{project.images.length}}
-              </span>
+                <a :href="'/work/' + project.link">
+                  <img loading="lazy" class="responsive" v-for="image in project.images" :src="image.src" :alt="image.alt"/>
+                </a>
               </div>
 
             </div>
@@ -131,7 +126,7 @@
 
   </div>
 
-  <script src="js/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/app.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/brutalist.js"></script>

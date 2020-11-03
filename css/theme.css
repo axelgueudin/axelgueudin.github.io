@@ -27,13 +27,14 @@
   cursor: url(../assets/icons/cursor.svg), auto !important;
 }
 
-a, a:hover {
+::selection{
+  background: yellow;
+}
+
+a, a:hover, img:hover {
   cursor: url(../assets/icons/cursor_hover.svg), pointer !important;
 }
 
-img:hover {
-  cursor: url(../assets/icons/hover.svg), pointer !important;
-}
 
 body {
   color: blue;
@@ -163,7 +164,7 @@ img[alt=""], img:not([alt]) {
 }
 
 /* Effet underline link */
-a:before {
+.underline:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -173,7 +174,7 @@ a:before {
   transition: 0.4s;
 }
 
-a:after {
+.underline:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -183,11 +184,11 @@ a:after {
   transition: 0.4s;
 }
 
-a:hover {
+.underline:hover {
   color: lime;
 }
 
-a:hover:after {
+.underline:hover:after {
   width: 100%;
 }
 
@@ -250,7 +251,6 @@ p {
 a {
   position: relative;
   color: inherit;
-  /* cursor: url(../assets/icons/cursor-default.png), auto !important; */
 }
 
 .bb {
