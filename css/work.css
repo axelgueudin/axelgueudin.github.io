@@ -4,30 +4,19 @@
 }
 
 @font-face {
-  font-family: SpaceMono Bold;
-  src: url(../fonts/SpaceMono-Bold.ttf);
-}
-
-@font-face {
-  font-family: SpaceMono Bold Italic;
-  src: url(../fonts/SpaceMono-BoldItalic.ttf);
-}
-
-@font-face {
-  font-family: SpaceMono Regular;
-  src: url(../fonts/SpaceMono-Regular.ttf);
-}
-
-@font-face {
-  font-family: Work Sans Regular;
-  src: url(../fonts/WorkSans-Regular.ttf);
+  font-family: 'open-arrow';
+   src: url('../fonts/OpenArrow-Regular.woff2') format('woff2'),
+        url('../fonts/OpenArrow-Regular.woff') format('woff'),
+   font-weight: normal;
+   font-style: normal;
+   unicode-range: U+2190-21ff;
 }
 
 * {
   cursor: url(../assets/icons/cursor.svg), auto !important;
 }
 
-a, a:hover {
+a, a:hover, a>img:hover {
   cursor: url(../assets/icons/cursor_hover.svg), pointer !important;
 }
 
@@ -64,7 +53,8 @@ header h2{
 }
 
 .description{
-  font-family: 'Work Sans Regular', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
   margin-bottom: 50px;
   line-height: 1.5;
   font-size: 16px;
@@ -82,12 +72,8 @@ p .description{
   margin-bottom: 50px;
 }
 
-.nav ul:first-child {
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
+.nav:last-child{
+  text-align: center;
 }
 
 .title{
@@ -100,11 +86,7 @@ ul, li{
 }
 
 /* Effet underline link */
-a:hover {
-  color: lime;
-}
-
-a:before {
+.underline:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -114,7 +96,7 @@ a:before {
   transition: 0.4s;
 }
 
-a:after {
+.underline:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -124,18 +106,29 @@ a:after {
   transition: 0.4s;
 }
 
-a:hover:after {
+.underline:hover {
+  color: lime;
+}
+
+.underline:hover:after {
   width: 100%;
 }
 
+
 body {
   color: blue;
-  font-family: 'SpaceMono Regular', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: normal;
   line-height: 1.2;
 }
 
 h1, h3, a {
-  font-family: 'SpaceMono Bold', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: bold;
+}
+
+.arrow{
+  font-family: 'open-arrow', Helvetica, sans-serif;
 }
 
 .container-fluid{
@@ -144,7 +137,6 @@ h1, h3, a {
 
 .back{
   margin: 100px;
-  text-align: center;
 }
 
 img[alt=""], img:not([alt]) {

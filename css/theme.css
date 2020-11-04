@@ -3,26 +3,6 @@
   src: url(../fonts/MonumentExtended-Ultrabold.otf);
 }
 
-@font-face {
-  font-family: SpaceMono Bold;
-  src: url(../fonts/SpaceMono-Bold.ttf);
-}
-
-@font-face {
-  font-family: SpaceMono Bold Italic;
-  src: url(../fonts/SpaceMono-BoldItalic.ttf);
-}
-
-@font-face {
-  font-family: SpaceMono Regular;
-  src: url(../fonts/SpaceMono-Regular.ttf);
-}
-
-@font-face {
-  font-family: SpaceMono Italic;
-  src: url(../fonts/SpaceMono-Italic.ttf);
-}
-
 * {
   cursor: url(../assets/icons/cursor.svg), auto !important;
 }
@@ -38,12 +18,14 @@ a, a:hover, img:hover {
 
 body {
   color: blue;
-  font-family: 'SpaceMono Regular', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: normal;
   line-height: 1.2;
 }
 
 h1, h3, a {
-  font-family: 'SpaceMono Bold', sans-serif;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: bold;
 }
 
 header{
@@ -192,11 +174,6 @@ img[alt=""], img:not([alt]) {
   width: 100%;
 }
 
-.informations {
-  font-size: 1rem;
-  font-family: 'SpaceMono Italic', sans-serif;
-}
-
 /* ajustement div images */
 .project {
   max-width: 100%;
@@ -213,11 +190,6 @@ img {
 }
 
 /* text img  */
-.counter {
-  float: right;
-  clear: both;
-}
-
 .wh{
     color: white;
 }
@@ -233,15 +205,6 @@ img {
 .tag {
   font-size: 1em;
   font-style: italic;
-}
-
-.slider *{
-  padding-left: 5rem;
-}
-
-/* link toggle */
-.slider {
-  margin: 20px 20px 10px 5px;
 }
 
 p {

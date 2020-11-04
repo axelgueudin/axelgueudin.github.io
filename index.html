@@ -18,6 +18,10 @@
   <link href="css/core/core.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,bold|Work+Sans:regular,bold">
+
+
   <meta property="og:title" content="AXEL GUEUDIN | Graphiste & UI Designer">
   <meta property="og:locale" content="fr_FR">
   <link rel="canonical" href="https://axelgueudin.fr">
@@ -114,7 +118,7 @@
 
               <div class="slider col s12 m9 l9" ref="slider">
                 <a :href="'/work/' + project.link">
-                  <img loading="lazy" class="responsive" v-for="image in project.images" :src="image.src" :alt="image.alt"/>
+                  <img loading="lazy"  v-for="image in project.images" :src="image.src" :alt="image.alt"/>
                 </a>
               </div>
 
