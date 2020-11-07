@@ -49,7 +49,7 @@ var app = new Vue({
         link: "mcn.html",
         description: "Made with <a href='https://www.behance.net/sarahbance/' class='underline' target='_blank' rel='noreferrer, noopener'>Sarah Bance</a>",
         images: [{
-            src: 'assets/images/mcn/logo.jpg',
+            src: 'assets/images/mcn/cover.jpg',
             alt: 'Cover - MCN'
           }]
       },
