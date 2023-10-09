@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     {
-      title: "The Crew - Roster screens redesign",
+      title: "The Crew - Roster screen redesign",
       link: "work/the-crew.html",
       tag: "UI Design, 2020",
       description: "Personal project",
