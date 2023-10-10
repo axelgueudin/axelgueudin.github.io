@@ -41,11 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "The Crew - Roster screen redesign",
       link: "work/the-crew.html",
       tag: "UI Design, 2020",
-      description: "Personal project",
+      description: "Interview task",
       images: [
         {
           src: 'assets/images/ubi_crew/cover.png',
           alt: 'Project cover'
+        }
+      ]
+    },
+    {
+      title: "Action-RPG UI",
+      link: "work/grunge_ui.html",
+      tag: "UI Design, 2021",
+      description: "Interview Task",
+      images: [
+        {
+          src: 'assets/images/grunge_ui/mockup-final.png',
+          alt: 'Mockup final inventory'
         }
       ]
     },
