@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     {
-      title: "Project GAIA",
-      link: "work/project-gaia.html",
-      tag: "UI Design, 2020",
+      title: "Dark Star",
+      link: "work/dark-star.html",
+      tag: "UI Design, 2023",
       description: "[WIP] - Personal project",
       images: [
         {
-          src: 'assets/images/ui_exo/loadout.png',
-          alt: 'Loadout Menu'
+          src: 'assets/images/dark-star/cover_lq.png',
+          alt: 'Project cover'
         }
       ]
     },
@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     {
-      title: "The Crew - Roster screen redesign",
-      link: "work/the-crew.html",
-      tag: "UI Design, 2020",
-      description: "Interview task",
+      title: "League of Legends - Combo tool design",
+      link: "work/combo-tool.html",
+      tag: "UI Design, 2023",
+      description: "Personal project",
       images: [
         {
-          src: 'assets/images/ubi_crew/cover.png',
+          src: 'assets/images/combo-tool/cover.png',
           alt: 'Project cover'
         }
       ]
