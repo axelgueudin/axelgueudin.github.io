@@ -1,23 +1,10 @@
 // app.js
 document.addEventListener("DOMContentLoaded", function () {
-  const projects = [
-    {
-      title: "Assassin's Creed Odyssey - Inventory Menu redesign",
-      link: "work/ac-odyssey.html",
-      tag: "UI Design, 2020",
-      description: "Personal project",
-      images: [
-        {
-          src: 'assets/images/ac_ody/cover.png',
-          alt: 'Project cover'
-        }
-      ]
-    },
-    {
+  const projects = [    {
       title: "Dark Star",
       link: "work/dark-star.html",
       tag: "UI Design, 2023",
-      description: "[WIP] - Personal project",
+      description: "Personal project",
       images: [
         {
           src: 'assets/images/dark-star/cover_lq.png',
@@ -28,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Master DGDI",
       link: "work/dgdi.html",
-      tag: "Graphic Design, 2019",
+      tag: "Branding, 2019",
       description: "Personal project",
       images: [
         {
@@ -50,8 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     {
+      title: "Unigm - Escape game",
+      link: "work/unigm.html",
+      tag: "Branding, 2020",
+      description: "Personal project",
+      images: [
+        {
+          src: 'assets/images/unigm/logo.png',
+          alt: 'Project cover'
+        }
+      ]
+    },
+    {
       title: "Action-RPG UI",
-      link: "work/grunge_ui.html",
+      link: "work/grunge-ui.html",
       tag: "UI Design, 2021",
       description: "Interview Task",
       images: [
