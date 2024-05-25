@@ -1,15 +1,42 @@
-plugins:
-  - jekyll-seo-tag
-  
-twitter:
- username: lXlON
- card: summary
+# Site settings
+title: Axel Gueudin
+email: axel.gueudin@gmail.com
+baseurl: ""
+url: "https://axelgueudin.fr"
+description: "Hi I'm Axel! I do design !"
+keywords: "your keywords, separated by commas"
+skills: "Art Director - Graphic Design - User Interface Designer - User Experience Designer"
+meta_author: GUEUDIN Axel
 
+timezone: UTC
+
+# Footer settings
+footer:
+  copyright: ©
+  name: Axel GUEUDIN
+  location: Rouen, FR
+  credits: All Rights Reserved
+
+# Social networks usernames
 social:
-  name: Axel Gueudin
-  links:
-    - https://twitter.com/lXlON
-    - https://www.linkedin.com/in/axel-gueudin-b8b059121
-    - https://github.com/gueudaxe
+  - title: instagram
+    url: https://instagram.com/axelgueudin
+  - title: linkedin
+    url: https://linkedin.com/in/axelgueudin
+  - title: dribbble
+    url: https://dribbble.com/lXlON
+  - title: artstation
+    url: https://artstation.com/axelgueudin
+  - title: behance
+    url: https://behance.com/axelgueudin
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins: [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag, jekyll-relative-links]
 
 
+#for projects
+collections:
+  projects:
+    output: true

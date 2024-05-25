@@ -1,0 +1,252 @@
+/* CSS */
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Variables*/
+:root{
+    --text-color: #224347;
+    --text-hover-color: #3f7074;
+    --accent-color: #fca07f;
+    --fade-color: #AeD4d2;
+    --main-bg-color: #f6f4f1;
+    --thumb-bg-color: rgba(0,0,0,0.5);
+    --filter: invert(21%) sepia(78%) saturate(469%) hue-rotate(144deg) brightness(93%) contrast(93%);
+}
+
+/* Global rules */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Bulma override*/
+* {
+/*    cursor: url(/assets/cursor.svg), auto !important;*/
+}
+
+a:hover {
+/*    cursor: url(/assets/cursor_hover.svg), pointer !important;*/
+    color: var(--text-hover-color);
+}
+
+.footer {
+    background: 0 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Syne', sans-serif;
+}
+
+img{
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2, h3, h4{
+    color: var(--text-hover-color) !important
+}
+
+.title{
+    font-family: 'Syne', sans-serif;
+    font-size: 7rem;
+    word-break: keep-all;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 0 !important
+}
+
+.content h2{
+    font-weight: 700
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+
+.gallery a{
+    font-size: 1.5rem;
+}
+
+.gallery h4{
+    font-size: 1rem;
+}
+
+
+span {
+ 
+}
+
+/* navbar */
+nav {
+  
+}
+
+.navbar{
+    background-color: transparent;
+}
+
+.navbar-item{
+    color: var(--main-color);
+    display: inline-block !important
+}
+
+a.navbar-item:hover{
+    background-color: transparent;
+    color: var(--text-hover-color);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease;
+}
+
+a.navbar-item:focus{
+    background-color: transparent;
+    color: inherit;
+}
+
+
+/* thumbnails */
+.thumbnails .thumbnail > a {
+    position: relative;
+}
+
+.thumbnails .thumbnail .title {
+    background-color: var(--fade-color);
+    padding: 0.5rem 1.2rem 0.7rem 1.2rem;
+    font-size: 4rem;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    margin: 0rem;
+    color: var(--text-color);
+    align-content: center;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: 9;
+    opacity: 0;
+}
+
+.thumbnails .title span{
+    margin: auto;
+    display: inline-block;
+}
+
+.thumbnails .thumbnail:hover .title{
+    opacity: 1;
+}
+
+body.mobile .thumbnails .thumbnail:hover .title{
+    opacity: 0;
+}
+
+/* project preview blocks */
+
+#project-date-container{
+    position: relative;
+}
+
+#project-date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#project-url-container{
+    position: relative;
+    text-align: right;
+}
+
+#project-url{
+
+}
+
+.project-date{
+    color: var(--text-hover-color);
+    font-weight: 400;
+}
+
+
+/* Layout project page */
+.banner{
+    
+}
+
+h1.project-title{
+    line-height: 1em;
+}
+
+.description>p{
+    margin-bottom: .75em;
+}
+
+
+/* Info */
+.info a{
+    text-decoration: underline;
+}
+
+.info a:hover{
+    color: var(--text-hover-color);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease;
+}
+
+.inline-icon {
+    position: relative;
+    top: 5px
+}
+
+img:is(:not([alt]), [alt=""]), .cover:not([aria-label]) {
+  filter: grayscale();
+}
+
+/*
+a:is(:not([href]), [href=""], [href="#"]){
+  outline: 2px red dotted;
+}
+*/
+
+.hyphens {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/*Footer*/
+.footer {
+    padding: 3rem 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: transparent;
+    box-shadow: none;
+    padding: .5rem 0;
+  }
+
+    .title{
+     white-space: normal;
+    }
+    
