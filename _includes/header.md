@@ -10,7 +10,6 @@
                     <div class="navbar-end">
                     <div class="field is-grouped">
                         <a class="navbar-item" href="/about/" title="Info">Info</a>
-                        <a class="navbar-item" href="https://read.cv/axelgueudin" title="CV" target="_blank">Read.cv <i class="lni lni-arrow-top-right inline-icon"></i></a>
                         <a class="navbar-item" href="mailto:{{ site.email }}" title="contact">Contact <i class="lni lni-arrow-top-right inline-icon"></i></a>
                     </div>
                     </div>
